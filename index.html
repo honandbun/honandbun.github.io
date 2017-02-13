@@ -26,11 +26,13 @@ $(document).ready( function() {
 
  $('.filters').on( 'click', '.button', function() {
    var $this = $(this);
-   console.log($this);
 
-   console.log($this[0].id);
    if($this[0].id === "header-about") {
      $('.aboutus').css("display", "block");
+   }
+
+   if($this[0].id === "header-rec") {
+    return;
    }
 
    // get group key
@@ -374,7 +376,7 @@ iframe {display:none}
                 <br><br><br>
                 <button id="header-about" class="button" data-filter=".aboutus">About Us</button>
                 <br><br><br>
-                <button class="button" data-filter="" onClick="location.href='recommendations.html'">Recommendations</button>
+                <button id="header-rec" class="button" data-filter=".recommendations" onClick="location.href='recommendations.html'">Recommendations</button>
             </div>
         </div>
         <div id="contactus">
@@ -395,7 +397,7 @@ iframe {display:none}
             <div class="info">  
                 Hey there! Welcome to Hon + Bun! This is the page where we write about the food that we've tried in different places around the world.<br><br>
 
-                To learn more about who we are, click the "About Us" section on the left. To land on our food page to see where we've eaten, click the Recommendations button on the left. To follow our social media pages, click the icons on the bottom left.<br><br>
+                To learn more about who we are, click the "About Us" section on the left. To land on our food page to see where we've eaten, click the "Recommendations" button on the left. To follow our social media pages, click the icons on the bottom left.<br><br>
 
                 We love our food and we love to write about it. We hope that you find our recommendations well written, funny, and most of all helpful! Enjoy!<br><br> 
             </div>
