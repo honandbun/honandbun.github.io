@@ -26,6 +26,13 @@ $(document).ready( function() {
 
  $('.filters').on( 'click', '.button', function() {
    var $this = $(this);
+   console.log($this);
+
+   console.log($this[0].id);
+   if($this[0].id === "header-about") {
+     $('.aboutus').css("display", "block");
+   }
+
    // get group key
    var $buttonGroup = $this.parents('.button-group');
    var filterGroup = $buttonGroup.attr('data-filter-group');
@@ -45,6 +52,10 @@ $(document).ready( function() {
      $( this ).addClass('is-checked');
    });
  });
+
+ $('.aboutus').css("display", "none");
+
+
 
 });
 
@@ -115,8 +126,8 @@ body {
     font-size: 9px;
     font-family: 'open sans',calibri,Helvetica,sans-serif;
     line-height: 100%;
+    /*overflow: hidden;*/
 }
-
 
 #br {
     display: inline-block;
@@ -146,6 +157,14 @@ h1 {
     color: #323232;
     font-weight: 400;
     font-size: 15px !important;
+}
+
+#contactus {
+    padding-top: 90%;
+}
+
+#contactus h3 {
+    font-size: 22px;
 }
 
 #top {
@@ -178,6 +197,18 @@ h1 {
     color: #fff;
 }
 
+#frontpic img {
+    border-radius: 250px;
+}
+
+a i {
+    color: #0597e1;
+}
+
+a i:hover {
+    color: #9bdcfd;
+}
+
 ol li {
     margin-left: -15px;
     padding: 5px;
@@ -208,13 +239,14 @@ ul li:before {
 }
 
 .grid-item {
-    margin: 15px;
-    padding: 10px 0;
-    width: 230px;
-    height: 270px;
-    background: #000;
-    color: #fff;
-    text-align: center;
+    /*margin: 15px;*/
+    /*padding: 10px 0;*/
+    width: 90%;
+    /*height: 270px;*/
+    height: 60%;
+    /*background: #000;*/
+    /*color: #fff;*/
+    /*text-align: center;*/
     text-transform: uppercase;
 }
 
@@ -242,9 +274,11 @@ ul li:before {
     margin: 15px 0;
     letter-spacing: 2px;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 24px;
     font-family: 'Montserrat',Helvetica,cambria,sans-serif;
-    line-height:100%;
+    line-height: 100%;
+    padding-left: 32%;
+
 }
 
 .long {
@@ -255,11 +289,13 @@ ul li:before {
 .info {
     position: relative;
     margin: 15px 0;
-    color: #ccc;
+    color: #000;
     letter-spacing: 1px;
-    font-size: 14px;
+    font-size: 18px;
     font-family: 'Open Sans';
     line-height: 120%;
+    margin-left: 5%;
+    width: 80%;
 }
 
 .sidebar {
@@ -327,92 +363,106 @@ iframe {display:none}
  
 <body>
     <div id="top">
-        <div class="toptitle"> HON + BUN</div>
-        <a class="return" href="index.html"><i class="fa fa-angle-left"></i> back to main</a>
+        <a href="index.html"><div class="toptitle">HON + BUN</div></a>
     </div>
 
     <div class="sidebar"> 
-    <div class="filters">
-
-        <!-- category zero -->
-        <div class="button-group" data-filter-group="availability">
-            <!-- <button class="button is-checked" data-filter="">All</button> -->
-            <button class="button is-checked" data-filter=".introduction">Introduction</button>
-            <br><br><br>
-            <button class="button" data-filter=".aboutus">About Us</button>
-            <br><br><br>
-            <button class="button" data-filter="" onClick="location.href='recommendations.html'">Recommendations</button>
+        <div class="filters">
+            <div class="button-group" data-filter-group="availability">
+                <!-- <button class="button is-checked" data-filter="">All</button> -->
+                <button id="header-intro" class="button is-checked" data-filter=".introduction">Introduction</button>
+                <br><br><br>
+                <button id="header-about" class="button" data-filter=".aboutus">About Us</button>
+                <br><br><br>
+                <button class="button" data-filter="" onClick="location.href='recommendations.html'">Recommendations</button>
+            </div>
         </div>
-    </div>
+        <div id="contactus">
+        <hr>
+            <h3>HON</h3>
+                <a href="https://www.instagram.com/mylinhsworld/" target="_blank"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+                <a href="https://www.yelp.com/user_details?userid=_5cskuF6D4V9ipUFO6PQKQ" target="_blank"><i class="fa fa-yelp fa-3x" aria-hidden="true"></i></a>
+            <h3>BUN</h3>
+                <a href="https://www.instagram.com/briannnnfong/" target="_blank"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+                <a href="https://www.yelp.com/user_details?userid=_jqTa-3-fqmBxnkANJHtFw" target="_blank"><i class="fa fa-yelp fa-3x" aria-hidden="true"></i></a>
+        </div>
     </div>
 
     <div class="grid">
-      
-    <a href="/">
-    <div class="recipes tokyo japanese drinks">
-    <div class="name"> CHARACTER NAME </div>
-    <img src="http://placehold.it/360x360">
-    <div class="info">  
-        00 | INFORMATION | MBTI <br>
-        FC: FIRST LAST<br>
-    </div>
-    </div>
-    </a>
+    
+        <div class="grid-item introduction">
+            <div class="name"> INTRODUCTION </div>
+            <div class="info">  
+                Hey there! Welcome to Hon + Bun! This is the page where we write about the food that we've tried in different places around the world.<br><br>
+
+                To learn more about who we are, click the "About Us" section on the left. To land on our food page to see where we've eaten, click the Recommendations button on the left. To follow our social media pages, click the icons on the bottom left.<br><br>
+
+                We love our food and we love to write about it. We hope that you find our recommendations well written, funny, and most of all helpful! Enjoy!<br><br> 
+            </div>
+        </div>
 <!-- 
-    <a href="/">
-    <div class="grid-item recommendations sandiego chinese desserts">
-    <div class="name"> CHARACTER NAME </div>
-    <img src="http://placehold.it/360x360">
-    <div class="info">  
-        00 | INFORMATION | MBTI <br>
-        FC: FIRST LAST<br>
-    </div>
-    </div>
-    </a>
+                <div id="frontpic">
+                    <div id="bun">
+                        <div class="name">Bun</div>
+                        <img src="img/me.png">
+                    </div>
+                </div>
+ -->
+        <div class="grid-item aboutus">
+            <div class="name"> ABOUT US </div>
+            <div class="info">
+                She's Hon. He's Bun. Together, we're Hon + Bun! <br><br>
 
-    <a href="/">
-    <div class="grid-item recipes sanfrancisco korean drinks">
-    <div class="name"> CHARACTER NAME </div>
-    <img src="http://placehold.it/360x360">
-    <div class="info">  
-        00 | INFORMATION | MBTI <br>
-        FC: FIRST LAST<br>
-    </div>
-    </div>
-    </a>
+                A pair of Yelp Elites, we're always looking for the next best thing that food has to offer. We like all kinds of food: popular, hole-in-the-wall, you name it. We don't discriminate and we're coming to find you and eat you. Delicious food, you can run but you can't hide.<br><br>
 
-    <a href="/">
-    <div class="grid-item recipes orangecounty japanese entrees">
-    <div class="name"> CHARACTER NAME </div>
-    <img src="http://placehold.it/360x360">
-    <div class="info">  
-        00 | INFORMATION | MBTI <br>
-        FC: FIRST LAST<br>
-    </div>
-    </div>
-    </a>
+                How did we come up with the name Hon + Bun? Well, we love nicknames! When we first started talking, we dabbled in a couple different nicknames but when we heard the words hon and bun together, we knew we found the ones. They sound so well together that we thought it would be a good title for our page!<br><br>
+            </div>
+        </div>
+    <!-- 
 
-    <a href="/">
-    <div class="grid-item recommendations tokyo mexican appetizers">
-    <div class="name"> CHARACTER NAME </div>
-    <img src="http://placehold.it/360x360">
-    <div class="info">  
-        00 | INFORMATION | MBTI <br>
-        FC: FIRST LAST<br>
-    </div>
-    </div>
-    </a>
+        <a href="/">
+        <div class="grid-item recipes sanfrancisco korean drinks">
+        <div class="name"> CHARACTER NAME </div>
+        <img src="http://placehold.it/360x360">
+        <div class="info">  
+            00 | INFORMATION | MBTI <br>
+            FC: FIRST LAST<br>
+        </div>
+        </div>
+        </a>
 
-    <a href="/">
-    <div class="grid-item recommendations sanfrancisco american appetizers">
-    <div class="name"> CHARACTER NAME </div>
-    <img src="http://placehold.it/360x360">
-    <div class="info">  
-        00 | INFORMATION | MBTI <br>
-        FC: FIRST LAST<br>
-    </div>
-    </div>
-    </a> -->
+        <a href="/">
+        <div class="grid-item recipes orangecounty japanese entrees">
+        <div class="name"> CHARACTER NAME </div>
+        <img src="http://placehold.it/360x360">
+        <div class="info">  
+            00 | INFORMATION | MBTI <br>
+            FC: FIRST LAST<br>
+        </div>
+        </div>
+        </a>
+
+        <a href="/">
+        <div class="grid-item recommendations tokyo mexican appetizers">
+        <div class="name"> CHARACTER NAME </div>
+        <img src="http://placehold.it/360x360">
+        <div class="info">  
+            00 | INFORMATION | MBTI <br>
+            FC: FIRST LAST<br>
+        </div>
+        </div>
+        </a>
+
+        <a href="/">
+        <div class="grid-item recommendations sanfrancisco american appetizers">
+        <div class="name"> CHARACTER NAME </div>
+        <img src="http://placehold.it/360x360">
+        <div class="info">  
+            00 | INFORMATION | MBTI <br>
+            FC: FIRST LAST<br>
+        </div>
+        </div>
+        </a> -->
 
     </div> <!---END GRID-->
 
