@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-<title>Home - Hon+Bun</title> <!--change title here-->
+<title>Hon + Bun</title> <!--change title here-->
  
 <link rel="shortcut icon" href="{Favicon}">
 <link rel="alternate" type="application/rss+xml" href="{RSS}">
@@ -27,10 +27,12 @@ $(document).ready( function() {
  $('.filters').on( 'click', '.button', function() {
    var $this = $(this);
 
+   // if clicking the about us button, show section before filtering (so it shows up)
    if($this[0].id === "header-about") {
      $('.aboutus').css("display", "block");
    }
 
+   // if clicking the recommendations button, don't filter
    if($this[0].id === "header-rec") {
     return;
    }
@@ -153,6 +155,10 @@ body {
     font-weight: 300;
     font-size: 16px;
     line-height: 100%;
+}
+
+.toptitle:hover {
+    color: #0597e1;
 }
 
 h1 {
@@ -417,7 +423,7 @@ iframe {display:none}
 
                 A pair of Yelp Elites, we're always looking for the next best thing that food has to offer. We like all kinds of food: popular, hole-in-the-wall, you name it. We don't discriminate and we're coming to find you and eat you. Delicious food, you can run but you can't hide.<br><br>
 
-                How did we come up with the name Hon + Bun? Well, we love nicknames! When we first started talking, we dabbled in a couple different nicknames but when we heard the words hon and bun together, we knew we found the ones. They sound so well together that we thought it would be a good title for our page!<br><br>
+                How did we come up with the name Hon + Bun? Well, we love nicknames! When we first started talking, we dabbled in a couple different nicknames but when we heard the words hon and bun together, we knew we found the ones. They sounded so well together that we thought it would be a good title for our page!<br><br>
             </div>
         </div>
     <!-- 
