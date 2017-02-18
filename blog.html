@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<head>
+<title>Hon + Bun</title> <!--change title here-->
+ 
+<link rel="shortcut icon" href="{Favicon}">
+<link rel="alternate" type="application/rss+xml" href="{RSS}">
+
+<!--fontawesome-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!--google fonts-->
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,400italic,700,700italic,300italic,300|Inconsolata' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" type="text/css" href="css/modal.css">
+
+<!-- filter scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready( function() {
+ // init Isotope
+ var $grid = $('.grid').isotope({
+   itemSelector: '.grid-item'
+ });
+
+ // store filter for each group
+ var filters = {};
+
+ $('.filters').on( 'click', '.button', function() {
+   var $this = $(this);
+   // get group key
+   var $buttonGroup = $this.parents('.button-group');
+   var filterGroup = $buttonGroup.attr('data-filter-group');
+   // set filter for group
+   filters[ filterGroup ] = $this.attr('data-filter');
+   // combine filters
+   var filterValue = concatValues( filters );
+   // set filter for Isotope
+   $grid.isotope({ filter: filterValue });
+ });
+
+ // change is-checked class on buttons
+ $('.button-group').each( function( i, buttonGroup ) {
+   var $buttonGroup = $( buttonGroup );
+   $buttonGroup.on( 'click', 'button', function() {
+     $buttonGroup.find('.is-checked').removeClass('is-checked');
+     $( this ).addClass('is-checked');
+   });
+ });
+
+});
+
+// layout Isotope after each image loads
+// $grid.imagesLoaded().progress( function() {
+//   $grid.isotope('layout');
+// });
+
+// flatten object by concatting values
+function concatValues( obj ) {
+ var value = '';
+ for ( var prop in obj ) {
+   value += obj[ prop ];
+ }
+ return value;
+}
+</script>
+ 
+
+<style type="text/css">
+
+.pagination li {
+  display:inline-block;
+  padding:5px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    border: 2px solid #fff;
+    background-color: #acacac;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background-color: #acacac;
+}
+
+::-webkit-scrollbar:horizontal {
+    height: 5px;
+}
+
+::selection {
+    background: gray;
+    color: #fff;
+}
+
+::-moz-selection {
+    background: gray;
+    color: #fff;
+}
+
+::-webkit-selection {
+    background: gray;
+    color: #fff;
+}
+
+a,a:active,a:visited,a:hover {
+    color: #0597e1;
+    text-decoration: none;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+body {
+/*    color: #5AA2F8;
+    font-weight: 100;
+    font-size: 9px;
+    font-family: 'open sans',calibri,Helvetica,sans-serif;
+    line-height: 100%;*/
+}
+
+
+#br {
+    display: inline-block;
+    margin-left: 380px;
+    padding: 35px;
+    width: 450px;
+    color: #fff;
+    text-align: center;
+}
+
+.toptitle,h1 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: 'Montserrat',Helvetica,cambria,sans-serif;
+}
+
+.toptitle {
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 100%;
+}
+
+.toptitle:hover {
+    color: #0597e1;
+}
+
+
+#top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    padding: 15px;
+    width: 100%;
+    height: 20px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Open Sans',Helvetica,cambria,sans-serif;
+}
+
+#top span {
+    display: inline-block;
+    padding-top: 5px;
+}
+
+
+#top a:hover {
+    color: #fff;
+}
+
+
+body {
+    color: #5AA2F8;
+    font-weight: 100;
+    font-size: 9px;
+    font-family: 'open sans',calibri,Helvetica,sans-serif;
+    line-height: 100%;
+}
+
+
+.return {
+    color: #E6C4FF;
+    float: right;
+    margin-top: 3px;
+    margin-right: 30px;
+    font-size: 16px;
+}
+
+
+#test-list li {
+    list-style: none;
+}
+
+#credit{line-height:100%; border-radius:50%;position:fixed;bottom:10px;right:10px;color:#fff;background:rgba(0,0,0,.2);padding:5px;width:10px;height:10px;font-family:roboto;overflow:hidden;font-size:10px;font-weight:100;white-space:nowrap;-moz-transition:all .6s ease-in-out;-ms-transition:all .6s ease-in-out;-o-transition:all .6s ease-in-out;-webkit-transition:all .6s ease-in-out;transition:all .6s ease-in-out}#credit:hover{background:#000;width:80px;border-radius:15px}#credit:before{font-size:10px;content:'\f292';font-family:FontAwesome;padding-right:5px;
+}
+
+   
+</style>
+</head>
+ 
+ 
+<body>
+    <div id="top">
+        <a href="index.html"><div class="toptitle">HON + BUN</div></a>
+        <div class="return"><a href="index.html"><i class="fa fa-angle-left"></i> BACK TO MAIN</a></div>
+    </div>
+
+    <a href="https://github.com/honandbun/honandbun.github.io" target="_blank">
+      <div id="credit">honandbun.</div>
+    </a>
+
+
+
+  <div id="test-list">
+    <input type="text" class="search" />
+    <ul class="list">
+      <li><div class="paginate"><img src="img/honandbun.jpg"></div></li>
+      <li><div class="paginate"><img src="img/foodpics/vallarta.jpg"></div></li>
+      <li><div class="paginate"><img src="img/foodpics/tacostand.jpg"></div></li>
+      <li><div class="paginate"><img src="img/foodpics/honandbun.jpg"></div></li>
+      <li><div class="paginate"><img src="img/foodpics/tacoselgordo.jpg"></div></li>
+      <li><div class="paginate"><img src="img/foodpics/honandbun.jpg"></div></li>
+      <li id="vallarta"><div class="paginate"><img src="img/foodpics/phils.jpg"></div></li>
+      <li><div class="paginate"><img src="img/foodpics/honandbun.jpg"></div></li>
+      <li><div class="paginate"><img src="img/foodpics/tpumps.jpg"></div></li>
+      <li><div class="paginate"><img src="img/foodpics/honandbun.jpg"></div></li>
+      <li><div class="paginate"><img src="img/foodpics/oldtownsushi.jpg"></div></li>
+      <li><div class="paginate"><img src="img/foodpics/honandbun.jpg"></div></li>
+      <li><div class="paginate"><img src="img/foodpics/tacoselnegro.jpg"></div></li>
+      <li><div class="paginate"><img src="img/foodpics/portos.jpg"></div></li>
+      <li><div class="paginate"><img src="img/foodpics/itsbobatime.jpg"></div></li>
+      <!-- <li><div class="name">Elaine Marley</div></li>
+      <li><div class="name">LeChuck</div></li>
+      <li><div class="name">Stan</div></li>
+      <li><div class="name">Voodoo Lady</div></li>
+      <li><div class="name">Herman Toothrot</div></li>
+      <li><div class="name">Meathook</div></li>
+      <li><div class="name">Carla</div></li>
+      <li><div class="name">Otis</div></li>
+      <li><div class="name">Rapp Scallion</div></li>
+      <li><div class="name">Rum Rogers Sr.</div></li>
+      <li><div class="name">Men of Low Moral Fiber</div></li>
+      <li><div class="name">Murray</div></li> 
+      <li><div class="name">Cannibals</div></li> -->
+    </ul>
+    <ul class="pagination"></ul>
+  </div>
+
+</body>
+
+<script type="text/javascript" src="js/list.js"></script>
+<script type="text/javascript" src="js/pagination.js"></script>
+
+
+</html>

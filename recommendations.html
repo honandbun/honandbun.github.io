@@ -12,362 +12,17 @@
 <!--google fonts-->
 <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,400italic,700,700italic,300italic,300|Inconsolata' rel='stylesheet' type='text/css'>
 
-<link rel="stylesheet" type="text/css" href="css/modal.css">
-
 <!-- filter scripts -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
 
-
-<script type="text/javascript">
-$(document).ready( function() {
- // init Isotope
- var $grid = $('.grid').isotope({
-   itemSelector: '.grid-item'
- });
-
- // store filter for each group
- var filters = {};
-
- $('.filters').on( 'click', '.button', function() {
-   var $this = $(this);
-   // get group key
-   var $buttonGroup = $this.parents('.button-group');
-   var filterGroup = $buttonGroup.attr('data-filter-group');
-   // set filter for group
-   filters[ filterGroup ] = $this.attr('data-filter');
-   // combine filters
-   var filterValue = concatValues( filters );
-   // set filter for Isotope
-   $grid.isotope({ filter: filterValue });
- });
-
- // change is-checked class on buttons
- $('.button-group').each( function( i, buttonGroup ) {
-   var $buttonGroup = $( buttonGroup );
-   $buttonGroup.on( 'click', 'button', function() {
-     $buttonGroup.find('.is-checked').removeClass('is-checked');
-     $( this ).addClass('is-checked');
-   });
- });
-
-});
-
-// layout Isotope after each image loads
-$grid.imagesLoaded().progress( function() {
-  $grid.isotope('layout');
-});
-
-// flatten object by concatting values
-function concatValues( obj ) {
- var value = '';
- for ( var prop in obj ) {
-   value += obj[ prop ];
- }
- return value;
-}
-
-    // function openModal() {
-        // Get the modal
-        var modal = document.getElementById('vallarta-modal');
-
-        // Get the button that opens the modal
-        var btn = document.getElementById("vallarta");
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks the button, open the modal 
-        btn.onclick = function() {
-            modal.style.display = "block";
-        }
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-
-    // }
-
-</script>
- 
-
-<style type="text/css">
+<!-- Local css and js files -->
+<link rel="stylesheet" type="text/css" href="css/recommendations.css">
+<script type="text/javascript" src="js/recommendations.js"></script>
+<link href="magnific-popup/magnific-popup.css" rel="stylesheet">
 
 
-
-::-webkit-scrollbar {
-    width: 5px;
-    border: 2px solid #fff;
-    background-color: #acacac;
-}
-
-::-webkit-scrollbar-thumb {
-    border-radius: 6px;
-    background-color: #acacac;
-}
-
-::-webkit-scrollbar:horizontal {
-    height: 5px;
-}
-
-::selection {
-    background: gray;
-    color: #fff;
-}
-
-::-moz-selection {
-    background: gray;
-    color: #fff;
-}
-
-::-webkit-selection {
-    background: gray;
-    color: #fff;
-}
-
-a,a:active,a:visited,a:hover {
-    color: #0597e1;
-    text-decoration: none;
-    -webkit-transition: all .3s ease-out;
-    -moz-transition: all .3s ease-out;
-    -ms-transition: all .3s ease-out;
-    -o-transition: all .3s ease-out;
-    transition: all .3s ease-out;
-}
-
-body {
-    color: #5AA2F8;
-    font-weight: 100;
-    font-size: 9px;
-    font-family: 'open sans',calibri,Helvetica,sans-serif;
-    line-height: 100%;
-}
-
-
-#br {
-    display: inline-block;
-    margin-left: 380px;
-    padding: 35px;
-    width: 450px;
-    color: #fff;
-    text-align: center;
-}
-
-.toptitle,h1 {
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-family: 'Montserrat',Helvetica,cambria,sans-serif;
-}
-
-.toptitle {
-    display: inline-block;
-    margin-right: 10px;
-    color: #fff;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 100%;
-}
-
-.toptitle:hover {
-    color: #0597e1;
-}
-
-h1 {
-    color: #323232;
-    font-weight: 400;
-    font-size: 15px !important;
-}
-
-#top {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 99999;
-    padding: 15px;
-    width: 100%;
-    height: 20px;
-    background: #000;
-    color: #fff;
-    text-transform: uppercase;
-    font-family: 'Open Sans',Helvetica,cambria,sans-serif;
-}
-
-#top span {
-    display: inline-block;
-    padding-top: 5px;
-}
-
-.return {
-    color: #E6C4FF;
-    float: right;
-    margin-top: 3px;
-    margin-right: 30px;
-    font-size: 16px;
-}
-
-#top a:hover {
-    color: #fff;
-}
-
-ol li {
-    margin-left: -15px;
-    padding: 5px;
-}
-
-ul li {
-    position: relative;
-    margin-left: -20px;
-    list-style-type: none;
-}
-
-ul li:before {
-    position: absolute;
-    margin-left: -10px;
-    content: '\f105';
-    font-size: 12px;
-    font-family: FontAwesome;
-}
-
-.grid {
-    position: fixed;
-    top: 50px;
-    margin-bottom:100px;
-    margin-left: 300px;
-    min-height:800px;
-    text-align: justify;
-    line-height: 100%;
-}
-
-.grid-item {
-    margin: 15px;
-    padding: 10px 0;
-    width: 230px;
-    height: 270px;
-    background: #000;
-    color: #fff;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.grid-item img {
-    position: relative;
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    -webkit-transition: all .3s ease-out;
-    -moz-transition: all .3s ease-out;
-    -ms-transition: all .3s ease-out;
-    -o-transition: all .3s ease-out;
-    transition: all .3s ease-out;
-}
-
-.grid-item:hover img {
-    box-shadow: 0 0 0 21px black,0 0 0 22px #fff;
-    -webkit-filter: grayscale(100%);
-    -webkit-transform: scale(.8);
-    -ms-transform: scale(.8);
-    transform: scale(.8);
-}
-
-div.column {
-    float: left;
-    width: 40%;
-}
-
-.name {
-    margin: 15px 0;
-    letter-spacing: 2px;
-    font-weight: 300;
-    font-size: 18px;
-    font-family: 'Montserrat',Helvetica,cambria,sans-serif;
-    line-height:100%;
-}
-
-.long {
-    margin:10px 0;
-    font-size:14px;
-}
-
-.info {
-    position: relative;
-    margin: 15px 0;
-    color: #ccc;
-    letter-spacing: 1px;
-    font-size: 14px;
-    font-family: 'Open Sans';
-    line-height: 120%;
-}
-
-.sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 40px;
-    width: 250px;
-    height: 100%;
-    background: #fff;
-}
-
-.filters {
-    margin-top: 35px;
-}
-
-button {
-    display: block;
-    padding-left: 10px;
-    width: 100%;
-    outline: none;
-    border: none;
-    background: transparent;
-    color: #828282;
-    text-align: left;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 11px;
-    font-family: 'Open Sans',Helvetica,cambria,sans-serif;
-    -webkit-transition: all .3s ease-out;
-    -moz-transition: all .3s ease-out;
-    -ms-transition: all .3s ease-out;
-    -o-transition: all .3s ease-out;
-    transition: all .3s ease-out;
-}
-
-.button.is-checked::before {
-    position: absolute;
-    margin-left: -10px;
-    margin-top: 2px;
-    content: '\f105';
-    font-family: FontAwesome;
-}
-
-.button:active,.button.is-checked {
-    color: #000;
-}
-
-.button-group {
-    margin: 20px 0;
-}
-
-
-iframe {display:none}
-
-.tmblr-iframe.tmblr-iframe--desktop-loggedin-controls.iframe-controls--desktop {display:none}
-
-#credit{line-height:100%; border-radius:50%;position:fixed;bottom:10px;right:10px;color:#fff;background:rgba(0,0,0,.2);padding:5px;width:10px;height:10px;font-family:roboto;overflow:hidden;font-size:10px;font-weight:100;white-space:nowrap;-moz-transition:all .6s ease-in-out;-ms-transition:all .6s ease-in-out;-o-transition:all .6s ease-in-out;-webkit-transition:all .6s ease-in-out;transition:all .6s ease-in-out}#credit:hover{background:#000;width:80px;border-radius:15px}#credit:before{font-size:10px;content:'\f292';font-family:FontAwesome;padding-right:5px;
-}
-
-   
-</style>
 </head>
- 
  
 <body>
     <div id="top">
@@ -414,26 +69,28 @@ iframe {display:none}
                 <button class="button is-checked" data-filter="">all</button>
                 <button class="button" data-filter=".bayarea">Bay Area</button>
                 <button class="button" data-filter=".losangeles">Los Angeles</button>
+                <button class="button" data-filter=".orangecounty">Orange County</button>
             </div>
             <div class="column">
-                <button class="button" data-filter=".orangecounty">Orange County</button>
+                <button class="button" data-filter=".sanantonio">San Antonio</button>
                 <button class="button" data-filter=".sandiego">San Diego</button>
                 <button class="button" data-filter=".tokyo">Tokyo</button>
-                <br><br>
+                <br><br><br><br><br>
             </div>
-
-
-            
         </div>
         
         <!-- category three -->
         <div class="button-group" data-filter-group="type">
             <h1>MENU</h1>
-            <button class="button is-checked" data-filter="">all</button>
-            <button class="button" data-filter=".appetizers">Appetizers</button>
-            <button class="button" data-filter=".desserts">Desserts</button>
-            <button class="button" data-filter=".drinks">Drinks</button>
-            <button class="button" data-filter=".entrees">Entrees</button>
+            <div class="column">
+                <button class="button is-checked" data-filter="">all</button>
+                <button class="button" data-filter=".appetizers">Appetizers</button>
+                <button class="button" data-filter=".desserts">Desserts</button>
+            </div>
+            <div class="column">
+                <button class="button" data-filter=".drinks">Drinks</button>
+                <button class="button" data-filter=".entrees">Entrees</button>
+            </div>
         </div>
 
         <!-- <hr><br> -->
@@ -451,7 +108,7 @@ iframe {display:none}
 
     <div class="grid">
       
-    <a href="" class="entry" id="vallarta">
+    <a href="#vallarta" class="entry open-popup-link">
         <div class="grid-item recommendations sandiego mexican entrees">
             <div class="name"> CHRISTIAN FRIES </div>
             <img src="img/foodpics/vallarta.jpg">
@@ -464,6 +121,10 @@ iframe {display:none}
             </div>
         </div>
     </a>
+    <div id="vallarta" class="white-popup mfp-hide">
+      <div class="info">Popup content</div>
+    </div>
+
 
     <a href="" class="entry" id="tacostand">
         <div class="grid-item recommendations sandiego mexican entrees">
@@ -635,7 +296,7 @@ iframe {display:none}
 
 
     <a href="" class="entry" id="losangelesaleworks">
-        <div class="grid-item recommendations losangeles korean entrees">
+        <div class="grid-item recommendations losangeles american drinks">
             <div class="long name"> SPACE XPA SESSION </div>
             <img src="img/foodpics/losangelesaleworks.jpg">
             <div class="info">  
@@ -758,5 +419,9 @@ iframe {display:none}
     </a>
 
 
+    <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="js/popup.js"></script>
 </body>
+
+
 </html>

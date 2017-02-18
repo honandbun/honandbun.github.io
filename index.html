@@ -13,366 +13,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
 
-
-<script type="text/javascript">
-$(document).ready( function() {
- // init Isotope
- var $grid = $('.grid').isotope({
-   itemSelector: '.grid-item'
- });
-
- // store filter for each group
- var filters = {};
-
- $('.filters').on( 'click', '.button', function() {
-   var $this = $(this);
-
-   // if clicking the about us button, show section before filtering (so it shows up)
-   if($this[0].id === "header-about") {
-     $('.aboutus').css("display", "block");
-   }
-
-   // if clicking the recommendations button, don't filter
-   if($this[0].id === "header-rec") {
-    return;
-   }
-
-   // get group key
-   var $buttonGroup = $this.parents('.button-group');
-   var filterGroup = $buttonGroup.attr('data-filter-group');
-   // set filter for group
-   filters[ filterGroup ] = $this.attr('data-filter');
-   // combine filters
-   var filterValue = concatValues( filters );
-   // set filter for Isotope
-   $grid.isotope({ filter: filterValue });
- });
-
- // change is-checked class on buttons
- $('.button-group').each( function( i, buttonGroup ) {
-   var $buttonGroup = $( buttonGroup );
-   $buttonGroup.on( 'click', 'button', function() {
-     $buttonGroup.find('.is-checked').removeClass('is-checked');
-     $( this ).addClass('is-checked');
-   });
- });
-
- $('.aboutus').css("display", "none");
-
-
-
-});
-
-// layout Isotope after each image loads
-$grid.imagesLoaded().progress( function() {
-  $grid.isotope('layout');
-});
-
-// flatten object by concatting values
-function concatValues( obj ) {
- var value = '';
- for ( var prop in obj ) {
-   value += obj[ prop ];
- }
- return value;
-}
-
-</script>
+<!-- Local css and js files -->
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<script type="text/javascript" src="js/index.js"></script>
  
-
-<style type="text/css">
-
-
-
-::-webkit-scrollbar {
-    width: 5px;
-    border: 2px solid #fff;
-    background-color: #acacac;
-}
-
-::-webkit-scrollbar-thumb {
-    border-radius: 6px;
-    background-color: #acacac;
-}
-
-::-webkit-scrollbar:horizontal {
-    height: 5px;
-}
-
-::selection {
-    background: gray;
-    color: #fff;
-}
-
-::-moz-selection {
-    background: gray;
-    color: #fff;
-}
-
-::-webkit-selection {
-    background: gray;
-    color: #fff;
-}
-
-a,a:active,a:visited,a:hover {
-    color: #828282;
-    text-decoration: none;
-    -webkit-transition: all .3s ease-out;
-    -moz-transition: all .3s ease-out;
-    -ms-transition: all .3s ease-out;
-    -o-transition: all .3s ease-out;
-    transition: all .3s ease-out;
-}
-
-body {
-    color: #828282;
-    font-weight: 100;
-    font-size: 9px;
-    font-family: 'open sans',calibri,Helvetica,sans-serif;
-    line-height: 100%;
-    overflow: hidden;
-}
-
-#rocket {
-    display: inline-block;
-    float: right;
-    width: 50%;
-    /*height: 60%;*/
-    height: auto;
-}
-
-#br {
-    display: inline-block;
-    margin-left: 380px;
-    padding: 35px;
-    width: 450px;
-    color: #fff;
-    text-align: center;
-}
-
-.toptitle,h1 {
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-family: 'Montserrat',Helvetica,cambria,sans-serif;
-}
-
-.toptitle {
-    display: inline-block;
-    margin-right: 10px;
-    color: #fff;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 100%;
-}
-
-.toptitle:hover {
-    color: #0597e1;
-}
-
-h1 {
-    color: #323232;
-    font-weight: 400;
-    font-size: 15px !important;
-}
-
-#contactus {
-    padding-top: 90%;
-}
-
-#contactus h3 {
-    font-size: 22px;
-}
-
-#top {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 99999;
-    padding: 15px;
-    width: 100%;
-    height: 20px;
-    background: #000;
-    color: #fff;
-    text-transform: uppercase;
-    font-family: 'Open Sans',Helvetica,cambria,sans-serif;
-}
-
-#top span {
-    display: inline-block;
-    padding-top: 5px;
-}
-
-.return {
-    float: right;
-    margin-top: 5px;
-    margin-right: 30px;
-    color: #828282;
-}
-
-#top a:hover {
-    color: #fff;
-}
-
-#frontpic img {
-    border-radius: 250px;
-}
-
-a i {
-    color: #0597e1;
-}
-
-a i:hover {
-    color: #9bdcfd;
-}
-
-ol li {
-    margin-left: -15px;
-    padding: 5px;
-}
-
-ul li {
-    position: relative;
-    margin-left: -20px;
-    list-style-type: none;
-}
-
-ul li:before {
-    position: absolute;
-    margin-left: -10px;
-    content: '\f105';
-    font-size: 12px;
-    font-family: FontAwesome;
-}
-
-.grid {
-    position: fixed;
-    top: 80px;
-    margin-bottom:100px;
-    margin-left: 250px;
-    min-height:800px;
-    text-align: justify;
-    line-height: 100%;
-}
-
-.grid-item {
-    /*margin: 15px;*/
-    /*padding: 10px 0;*/
-    width: 90%;
-    /*height: 270px;*/
-    height: 60%;
-    /*background: #000;*/
-    /*color: #fff;*/
-    /*text-align: center;*/
-    text-transform: uppercase;
-}
-
-/*.grid-item img {
-    position: relative;
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    -webkit-transition: all .3s ease-out;
-    -moz-transition: all .3s ease-out;
-    -ms-transition: all .3s ease-out;
-    -o-transition: all .3s ease-out;
-    transition: all .3s ease-out;
-}*/
-
-/*.grid-item:hover img {
-    box-shadow: 0 0 0 21px black,0 0 0 22px #fff;
-    -webkit-filter: grayscale(100%);
-    -webkit-transform: scale(.8);
-    -ms-transform: scale(.8);
-    transform: scale(.8);
-}*/
-
-.name {
-    margin: 15px 0;
-    letter-spacing: 2px;
-    font-weight: 300;
-    font-size: 24px;
-    font-family: 'Montserrat',Helvetica,cambria,sans-serif;
-    line-height: 100%;
-    padding-left: 32%;
-
-}
-
-.long {
-    margin:10px 0;
-    font-size:14px;
-}
-
-.info {
-    position: relative;
-    margin: 15px 0;
-    color: #000;
-    letter-spacing: 1px;
-    font-size: 18px;
-    font-family: 'Open Sans';
-    line-height: 120%;
-    margin-left: 5%;
-    width: 80%;
-}
-
-.sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 40px;
-    width: 200px;
-    height: 100%;
-    background: #fff;
-}
-
-.filters {
-    margin-top: 55px;
-}
-
-button {
-    display: block;
-    padding-left: 10px;
-    width: 100%;
-    outline: none;
-    border: none;
-    background: transparent;
-    color: #828282;
-    text-align: left;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 18px;
-    font-family: 'Open Sans',Helvetica,cambria,sans-serif;
-    -webkit-transition: all .3s ease-out;
-    -moz-transition: all .3s ease-out;
-    -ms-transition: all .3s ease-out;
-    -o-transition: all .3s ease-out;
-    transition: all .3s ease-out;
-}
-
-.button.is-checked::before {
-    position: absolute;
-    margin-left: -13px;
-    margin-top: 3px;
-    content: '\f105';
-    font-family: FontAwesome;
-}
-
-.button:active,.button.is-checked {
-    color: #000;
-}
-
-.button-group {
-    margin: 20px 0;
-}
-
-
-iframe {display:none}
-
-.tmblr-iframe.tmblr-iframe--desktop-loggedin-controls.iframe-controls--desktop {display:none}
-
-#credit{line-height:100%; border-radius:50%;position:fixed;bottom:10px;right:10px;color:#fff;background:rgba(0,0,0,.2);padding:5px;width:10px;height:10px;font-family:roboto;overflow:hidden;font-size:10px;font-weight:100;white-space:nowrap;-moz-transition:all .6s ease-in-out;-ms-transition:all .6s ease-in-out;-o-transition:all .6s ease-in-out;-webkit-transition:all .6s ease-in-out;transition:all .6s ease-in-out}#credit:hover{background:#000;width:80px;border-radius:15px}#credit:before{font-size:10px;content:'\f292';font-family:FontAwesome;padding-right:5px;
-}
-
-</style>
 </head>
  
 <body>
@@ -386,6 +30,8 @@ iframe {display:none}
                 <button id="header-intro" class="button is-checked" data-filter=".introduction">Introduction</button>
                 <br><br><br>
                 <button id="header-about" class="button" data-filter=".aboutus">About Us</button>
+                <br><br><br>
+                <button id="header-blog" class="button" data-filter=".blog" onClick="location.href='blog.html'">Blog</button>
                 <br><br><br>
                 <button id="header-rec" class="button" data-filter=".recommendations" onClick="location.href='recommendations.html'">Recommendations</button>
             </div>
@@ -403,32 +49,31 @@ iframe {display:none}
     </div>
 
     <div class="grid">
-    
         <div class="grid-item introduction">
             <div class="name"> UPDATES </div>
-            <div class="info">  
-                <b>FEBRUARY 17, 2017</b>: We've been adding restaurants for our entries! Check out where we've added so far by going to the recommendations page!<br><br> 
+            <div class="info">
+                <b>FEBRUARY 17, 2017</b>: We've been adding restaurants for our entries! Check out what we added so far by going to the recommendations page!<br><br> 
             </div>
             <div class="name"> INTRODUCTION </div>
             <div class="info">  
-                Hey there! Welcome to Hon + Bun! This is the page where we write about the food that we've tried in different places around the world.<br><br>
+                Hey there! Welcome to Hon + Bun! This is the page where we write about the food that we've tried in different places around the world. We also try recipes that we find online, review them, and rate them.<br><br>
 
-                To learn more about who we are, click the "About Us" section on the left. To see where we've eaten, click the "Recommendations" button on the left. To follow our social media pages, click the icons on the bottom left.<br><br>
-
-                We love our food and we love to write about it. We hope that you find our recommendations well written, funny, and most of all helpful! Enjoy! <br><br>
+                To learn more about who we are, click the "About Us" section. To see where we've eaten and our recipe reviews, click the "Recommendations" button. To check out our social media pages, click the icons on the bottom left.<br><br>
             </div> 
         </div>
 
         <div class="grid-item aboutus">
             <div class="name"> ABOUT US </div>
-            <div class="info">
                 <img id="rocket" src="img/honandbun.jpg">
-
+            <div class="info">
                 She's Hon. He's Bun. Together, we're Hon + Bun! <br><br>
 
                 Hon works in student affairs. Bun is a software engineer. A pair of Yelp Elites, we're always looking for the next best thing that food has to offer. We like all kinds of food: popular, hole-in-the-wall, you name it. We don't discriminate and we're coming to find you and eat you. Delicious food, you can run but you can't hide.<br><br>
 
-                How did we come up with the name Hon + Bun? Well, we love nicknames! When we first started talking, we dabbled in a couple different nicknames but when we heard the words hon and bun together, we knew we found the ones. They sounded so well together that we thought it would be a good title for our page!<br><br>
+                How did we come up with the name Hon + Bun? Well, we love nicknames! When we first started talking, we dabbled in a couple different nicknames but when we heard the words hon and bun, we knew we found the ones. They sound so well together that we thought it would be a good title for our page!<br><br>
+
+
+                We love  food and love to write about it. We hope that you find our recommendations well written, funny, and most of all helpful! Enjoy! <br><br>
             </div>
         </div>
 
