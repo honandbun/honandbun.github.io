@@ -238,7 +238,7 @@ ul li:before {
 
 .grid {
     position: fixed;
-    top: 80px;
+    top: 50px;
     margin-bottom:100px;
     margin-left: 250px;
     min-height:800px;
@@ -277,6 +277,11 @@ ul li:before {
     transform: scale(.8);
 }
 
+div.column {
+    float: left;
+    width: 35%;
+}
+
 .name {
     margin: 15px 0;
     letter-spacing: 2px;
@@ -312,7 +317,7 @@ ul li:before {
 }
 
 .filters {
-    margin-top: 55px;
+    margin-top: 35px;
 }
 
 button {
@@ -384,16 +389,25 @@ iframe {display:none}
         <!-- category one -->
         <div class="button-group" data-filter-group="availability">
             <h1>CUISINE</h1>
-            <button class="button is-checked" data-filter="">all</button>
-            <button class="button" data-filter=".american">American</button>
-            <button class="button" data-filter=".chinese">Chinese</button>
-            <button class="button" data-filter=".cuban">Cuban</button>
-            <button class="button" data-filter=".indian">Indian</button>
-            <button class="button" data-filter=".japanese">Japanese</button>
-            <button class="button" data-filter=".korean">Korean</button>
-            <button class="button" data-filter=".mexican">Mexican</button>
-            <button class="button" data-filter=".thai">Thai</button>
-            <button class="button" data-filter=".vietnamese">Vietnamese</button>
+
+            <div class="column">
+                <button class="button is-checked" data-filter="">all</button>
+                <button class="button" data-filter=".american">American</button>
+                <button class="button" data-filter=".chinese">Chinese</button>
+                <button class="button" data-filter=".cuban">Cuban</button>
+                <button class="button" data-filter=".indian">Indian</button>
+            </div>
+            <div class="column">
+                <button class="button" data-filter=".japanese">Japanese</button>
+                <button class="button" data-filter=".korean">Korean</button>
+                <button class="button" data-filter=".mexican">Mexican</button>
+                <button class="button" data-filter=".thai">Thai</button>
+                <button class="button" data-filter=".vietnamese">Vietnamese</button>
+                <br><br>
+            </div>
+
+
+
         </div>
 
         <!-- category two -->
