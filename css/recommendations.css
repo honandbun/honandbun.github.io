@@ -201,6 +201,10 @@ div.column {
     line-height: 120%;
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
+
 .sidebar {
     position: fixed;
     top: 0;
