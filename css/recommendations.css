@@ -259,14 +259,44 @@ iframe {display:none}
 #credit{line-height:100%; border-radius:50%;position:fixed;bottom:10px;right:10px;color:#fff;background:rgba(0,0,0,.2);padding:5px;width:10px;height:10px;font-family:roboto;overflow:hidden;font-size:10px;font-weight:100;white-space:nowrap;-moz-transition:all .6s ease-in-out;-ms-transition:all .6s ease-in-out;-o-transition:all .6s ease-in-out;-webkit-transition:all .6s ease-in-out;transition:all .6s ease-in-out}#credit:hover{background:#000;width:80px;border-radius:15px}#credit:before{font-size:10px;content:'\f292';font-family:FontAwesome;padding-right:5px;
 }
 
+/* the pop up */
 .white-popup {
   position: relative;
-  background: #FFF;
+  background: #ddd;
   padding: 20px;
   width:auto;
-  max-width: 800px;
+  max-width: 900px;
   margin: 20px auto;
-  height: 500px;
+  height: 550px;
 }
 
+.restaurant-info {
+    float: left;
+    width: 40%;
+}
 
+.restaurant-desc {
+    float: right;
+    width: 60%;
+}
+
+img.entrypic {
+    width: 95%;
+    height: auto;
+}
+
+.restaurant-text {
+    position: relative;
+    margin: 15px 0;
+    color: #323232;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-family: 'Open Sans';
+    line-height: 120%;
+}
+
+a.yelp-link:hover {
+    text-decoration: underline;
+    /*position: relative;*/
+    color: #d90007;
+}
