@@ -32,9 +32,9 @@ $(document).ready( function() {
 });
 
 // layout Isotope after each image loads
-$grid.imagesLoaded().progress( function() {
-  $grid.isotope('layout');
-});
+// $grid.imagesLoaded().progress( function() {
+//   $grid.isotope('layout');
+// });
 
 // flatten object by concatting values
 function concatValues( obj ) {

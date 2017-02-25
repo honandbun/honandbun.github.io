@@ -40,10 +40,7 @@ $(document).ready( function() {
    });
  });
 
- $('.aboutus').css("display", "none");
-
-
-
+ $('.aboutus').css("display", "none"); // hides the aboutus section on page load
 });
 
 // layout Isotope after each image loads

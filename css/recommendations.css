@@ -272,6 +272,7 @@ iframe {display:none}
   max-width: 900px;
   margin: 20px auto;
   height: 550px;
+  overflow: auto;
 }
 
 .restaurant-info {
@@ -303,4 +304,13 @@ a.yelp-link:hover {
     text-decoration: underline;
     /*position: relative;*/
     color: #d90007;
+}
+
+.rotateClockwise {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    /*background: 50% 50% no-repeat;*/
 }
