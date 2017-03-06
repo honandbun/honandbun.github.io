@@ -34,12 +34,12 @@
 
     <div class="filters">
         <!-- category zero -->
-        <div class="button-group" data-filter-group="availability">
+<!--         <div class="button-group" data-filter-group="availability">
             <h1>CONTENT</h1>
             <button class="button is-checked" data-filter="">all</button>
             <button class="button" data-filter=".recipes">Recipes</button>
             <button class="button" data-filter=".recommendations">Recommendations</button>
-        </div>
+        </div> -->
 
         <!-- category one -->
         <div class="button-group" data-filter-group="availability">
@@ -90,6 +90,17 @@
             <div class="column">
                 <button class="button" data-filter=".drinks">Drinks</button>
                 <button class="button" data-filter=".entrees">Entrees</button>
+                <br><br><br><br><br>
+            </div>
+        </div>
+
+        <!-- category four -->
+        <div class="button-group" data-filter-group="type">
+            <h1>REVIEWS</h1>
+            <div class="column">
+                <button class="button is-checked" data-filter="">all</button>
+                <button class="button" data-filter=".hon">Hon</button>
+                <button class="button" data-filter=".bun">Bun</button>
             </div>
         </div>
 
@@ -109,7 +120,7 @@
     <div class="grid">
       
     <a href="#vallarta" class="entry open-popup-link">
-        <div class="grid-item recommendations sandiego mexican entrees">
+        <div class="grid-item recommendations sandiego mexican entrees bun">
             <div class="name"> CHRISTIAN FRIES </div>
             <img src="img/foodpics/vallarta.jpg">
             <div class="info">  
@@ -137,7 +148,7 @@
     </div>
 
     <a href="#tacostand" class="entry open-popup-link">
-        <div class="grid-item recommendations sandiego mexican entrees">
+        <div class="grid-item recommendations sandiego mexican entrees bun">
             <div class="name"> SONORA TACO </div>
             <img src="img/foodpics/tacostand.jpg">
             <div class="info">  
@@ -165,7 +176,7 @@
     </div>
 
     <a href="#portos" class="entry open-popup-link">
-        <div class="grid-item recommendations losangeles cuban appetizers">
+        <div class="grid-item recommendations losangeles cuban appetizers bun">
             <div class="long name"> POTATO BALLS </div>
             <img src="img/foodpics/portos.jpg">
             <div class="info">  
@@ -193,7 +204,7 @@
     </div>
 
     <a href="#bahnthai" class="entry open-popup-link">
-        <div class="grid-item recommendations sandiego thai entrees">
+        <div class="grid-item recommendations sandiego thai entrees bun">
             <div class="name"> YELLOW CURRY </div>
             <img src="img/foodpics/bahnthai.jpg">
             <div class="info">  
@@ -221,7 +232,7 @@
     </div>
 
     <a href="#santung" class="entry open-popup-link">
-        <div class="grid-item recommendations bayarea chinese entrees">
+        <div class="grid-item recommendations bayarea chinese entrees bun">
             <div class="name"> DRY FRIED CHICKEN </div>
             <img src="img/foodpics/santung.jpg">
             <div class="info">  
@@ -250,7 +261,7 @@
 
 
     <a href="#tacoselgordo" class="entry open-popup-link">
-        <div class="grid-item recommendations sandiego mexican entrees">
+        <div class="grid-item recommendations sandiego mexican entrees bun">
             <div class="long name"> AL PASTOR TACO </div>
             <img src="img/foodpics/tacoselgordo.jpg">
             <div class="info">  
@@ -278,7 +289,7 @@
 
 
     <a href="#hodads" class="entry open-popup-link">
-        <div class="grid-item recommendations sandiego american drinks">
+        <div class="grid-item recommendations sandiego american drinks bun">
             <div class="long name"> STRAWBERRY<br> MILKSHAKE </div>
             <img src="img/foodpics/hodads.jpg">
             <div class="info">  
@@ -305,7 +316,7 @@
 
 
     <a href="#phils" class="entry open-popup-link">
-        <div class="grid-item recommendations sandiego american entrees">
+        <div class="grid-item recommendations sandiego american entrees bun">
             <div class="name"> BEEFY RIBS </div>
             <img src="img/foodpics/phils.jpg">
             <div class="info">  
@@ -335,7 +346,7 @@
 
 
     <a href="" class="entry" id="perilla">
-        <div class="grid-item recommendations bayarea vietnamese entrees">
+        <div class="grid-item recommendations bayarea vietnamese entrees bun">
             <div class="long name"> CHARBOILED CHICKEN GARLIC NOODLES </div>
             <img src="img/foodpics/perilla.jpg">
             <div class="info">  
@@ -349,8 +360,8 @@
     </a>
 
 
-    <a href="" class="entry" id="fukki">
-        <div class="grid-item recommendations tokyo japanese entrees">
+    <a href="#fukki" class="entry open-popup-link">
+        <div class="grid-item recommendations tokyo japanese entrees bun">
             <div class="name"> SPICY PORK RAMEN </div>
             <img src="img/foodpics/fukki.jpg">
             <div class="info">  
@@ -362,10 +373,23 @@
             </div>
         </div>
     </a>
+    <div id="fukki" class="white-popup mfp-hide">
+        <h1>Fukki</h1><br>
+        <div class="restaurant-info restaurant-text">
+            <img class="entrypic" src="img/entrypics/fukki.jpg">        
+            <span class="uppercase"><b>Spicy Pork Ramen</b><br><br>芝大門2-1-1<br>Minato, 東京都 〒105-0012 Japan<br><br></span>
+            <a class="yelp-link" href="https://www.yelp.com/biz/%E7%A6%8F%E6%B0%97-%E6%B8%AF%E5%8C%BA" target="_blank">YELP</a><br>
+        </div>
+        <div class="restaurant-desc restaurant-text">
+            Can anything be more authentic than ramen in Japan? Talk about going there with high expectations and then everything exceeds your expectations. This was probably my favorite meal in Japan: a small, simple ramen shop near Tokyo Tower that only had one worker.<br><br>
+            It was a cold day in December and the broth was the perfect remedy. I got the spicy pork ramen so the soup had a little kick to it but not so much that you couldn't eat it. The pork was so soft and juicy, I remember closing my eyes and just cherishing it (and if you read my other recommendations, that rarely happens). It was just so tasty that sometimes I can think back to that meal and just taste the pork in my mouth. I remember eating it at the time and thinking to myself, "Yup, this is my favorite meal so far." and it stayed that way the entire trip.<br><br>
+            The best part about this meal was that I was at the booth and I was watching the worker make my order. It was a show just watching him make the noodles, make the broth, and put all the toppings on. It definitely made the meal so much more enjoyable to see it being made and if I were to go back to Japan, I'd try my best to go back to this place to bring back the memories of that cold December day.<br><br>-BUN
+        </div>
+    </div>
 
 
     <a href="" class="entry" id="graters">
-        <div class="grid-item recommendations sandiego american entrees">
+        <div class="grid-item recommendations sandiego american entrees bun">
             <div class="long name"> LOBSTER GRILLED CHEESE </div>
             <img src="img/foodpics/graters.jpg">
             <div class="info">  
@@ -379,7 +403,7 @@
 
 
     <a href="" class="entry" id="lowkeypokejoint">
-        <div class="grid-item recommendations orangecounty japanese entrees">
+        <div class="grid-item recommendations orangecounty japanese entrees bun">
             <div class="long name"> POKE BOWL </div>
             <img src="img/foodpics/lowkeypokejoint.jpg">
             <div class="info">  
@@ -393,7 +417,7 @@
 
 
     <a href="" class="entry" id="leestofu">
-        <div class="grid-item recommendations losangeles korean entrees">
+        <div class="grid-item recommendations losangeles korean entrees bun">
             <div class="name"> BEEF TOFU </div>
             <img src="img/foodpics/leestofu.jpg">
             <div class="info">  
@@ -407,7 +431,7 @@
 
 
     <a href="" class="entry" id="losangelesaleworks">
-        <div class="grid-item recommendations losangeles american drinks">
+        <div class="grid-item recommendations losangeles american drinks bun">
             <div class="long name"> SPACE XPA SESSION </div>
             <img src="img/foodpics/losangelesaleworks.jpg">
             <div class="info">  
@@ -422,7 +446,7 @@
 
 
     <a href="" class="entry" id="punjabitandoor">
-        <div class="grid-item recommendations sandiego indian entrees">
+        <div class="grid-item recommendations sandiego indian entrees bun">
             <div class="long name"> PUNJABI TANDOOR </div>
             <img src="img/foodpics/punjabitandoor.jpg">
             <div class="info">  
@@ -437,7 +461,7 @@
 
 
     <a href="" class="entry" id="tacoselnegro">
-        <div class="grid-item recommendations losangeles mexican entrees">
+        <div class="grid-item recommendations losangeles mexican entrees bun">
             <div class="long name"> TACOS EL NEGRO </div>
             <img src="img/foodpics/tacoselnegro.jpg">
             <div class="info">  
@@ -451,7 +475,7 @@
 
 
     <a href="#itsbobatime" class="entry open-popup-link">
-        <div class="grid-item recommendations losangeles chinese drinks">
+        <div class="grid-item recommendations losangeles chinese drinks bun">
             <div class="name"> AVOCADO SMOOTHIE </div>
             <img src="img/foodpics/itsbobatime.jpg">
             <div class="info">  
@@ -476,6 +500,20 @@
             I like the avocado smoothie because it's super creamy and smooth. They also use avocados so sometimes you'll taste a bigger than normal chunk. The pistachio frappe also uses real pistachios and you'll taste the pistachio bits in there. The boba is sweet and chewy too. There's not much else to say other than it's my favorite boba place in Southern California. If there's Boba Time near me, then it's boba time.<br><br>-BUN
         </div>
     </div>
+
+
+    <a href="#thecottage" class="entry open-popup-link">
+        <div class="grid-item recommendations sandiego american entrees bun">
+            <div class="long name"> STUFFED FRENCH<br> TOAST </div>
+            <img src="img/foodpics/thecottage.jpg">
+            <div class="info">  
+                THE COTTAGE | LA JOLLA<br><i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+            </div>
+        </div>
+    </a>   
     <div id="thecottage" class="white-popup mfp-hide">
         <h1>The Cottage</h1><br>
         <div class="restaurant-info restaurant-text">
@@ -491,22 +529,8 @@
     </div>
 
 
-    <a href="#thecottage" class="entry open-popup-link">
-        <div class="grid-item recommendations sandiego american entrees">
-            <div class="long name"> STUFFED FRENCH<br> TOAST </div>
-            <img src="img/foodpics/thecottage.jpg">
-            <div class="info">  
-                THE COTTAGE | LA JOLLA<br><i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-            </div>
-        </div>
-    </a>   
-
-
     <a href="#bahnthai2" class="entry open-popup-link">
-        <div class="grid-item recommendations sandiego thai entrees">
+        <div class="grid-item recommendations sandiego thai entrees bun">
             <div class="name"> PAD THAI </div>
             <img src="img/foodpics/bahnthai2.jpg">
             <div class="info">  
@@ -532,12 +556,39 @@
         </div>
     </div>
 
-    <a href="" class="entry" id="oldtownsushi">
-        <div class="grid-item recommendations bayarea japanese entrees">
+    <a href="#oldtownsushi" class="entry open-popup-link">
+        <div class="grid-item recommendations bayarea japanese entrees bun">
             <div class="long name"> NUMBER ONE ROLL </div>
             <img src="img/foodpics/oldtownsushi.jpg">
             <div class="info">  
                 OLD TOWN SUSHI |<br> SAN MATEO<br><i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+            </div>
+        </div>
+    </a>    
+   <div id="oldtownsushi" class="white-popup mfp-hide">
+        <h1>Old Town Sushi</h1><br>
+        <div class="restaurant-info restaurant-text">
+            <img class="entrypic" src="img/entrypics/oldtownsushi.jpg">        
+            <span class="uppercase"><b>Number One Roll</b><br><br>100 S B St<br>San Mateo, CA 94401<br><br></span>
+            <a class="yelp-link" href="https://www.yelp.com/biz/old-town-sushi-san-mateo" target="_blank">YELP</a><br>
+        </div>
+        <div class="restaurant-desc restaurant-text">
+            Tpumps. Old Town Sushi right next door. Or Tpumps while we ate at Old Town Sushi. Those were the good times. (You can even see the Tpumps in the back of that picture). A good friend Jennifer and I would do that every time we came back from college during break. That would be our go-to hangout meal. And then everything changed when the San Mateo Tpumps location closed. But then the San Francisco location opened and the world went back to normal (kinda).<br><br>
+            My family and I love to go here when I visit home because it's a great environment. The staff are great and love to joke around. We usually come for dinner so we can get the dinner combination, which is a combination of three dishes on their selected menu for $22 or so, which is an absolute steal! I also recommend the double salmon roll because salmon = life.<br><br>
+            The number one roll is a normal roll ingredient-wise, but they have a mountain of imitation crab meat on top and they also put some sriracha as well. It's a giant masterpiece that's very Instagram friendly, for those who want to post their pictures. The roll itself is very good but sometimes the crab meat can get overwhelming because of the mayonnaise but other than that, it's delicious. Too bad it's not one of the rolls included on the dinner combination menu.<br><br>-BUN
+        </div>
+    </div>
+
+    <a href="#tpumps" class="entry open-popup-link">
+        <div class="grid-item recommendations bayarea chinese drinks bun">
+            <div class="long name"> HONEY MANGO<br> BLACK MILK TEA </div>
+            <img src="img/foodpics/tpumps.jpg">
+            <div class="info">  
+                TPUMPS | SAN FRANCISCO<br><i class="fa fa-star-o" aria-hidden="true"></i>
                 <i class="fa fa-star-o" aria-hidden="true"></i>
                 <i class="fa fa-star-o" aria-hidden="true"></i>
                 <i class="fa fa-star-o" aria-hidden="true"></i>
@@ -553,29 +604,12 @@
             <a class="yelp-link" href="https://www.yelp.com/biz/tpumps-san-francisco" target="_blank">YELP</a><br>
         </div>
         <div class="restaurant-desc restaurant-text">
-            Old Town Sushi. Tpumps right next door. Or Tpumps while we ate at Old Town Sushi. Those were the good times. A good friend Jennifer and I would do that every time we came back from college during break. That would be our go-to hangout meal. And then everything changed when the San Mateo Tpumps location closed. But then the San Francisco location opened and the world went back to normal.<br><br>
+            Old Town Sushi. Tpumps right next door. Or Tpumps while we ate at Old Town Sushi. Those were the good times. A good friend Jennifer and I would do that every time we came back from college during break. That would be our go-to hangout meal. And then everything changed when the San Mateo Tpumps location closed. But then the San Francisco location opened and the world went back to normal (kinda).<br><br>
             My order: honey mango black milk tea, normal sweet, with boba and light ice. It's a sweet drink so if you don't like sweet, you can try other flavors or get it less sweet. In college, I met someone who worked at Tpumps at the time. I asked her what she recommended and she said this drink. I tried it once and I never looked back.<br><br> 
             When I went home during a school break in college, I went to Tpumps  days in a row, and one of those days I went twice in a day. And for the most part, I got the same thing every time. That's how much I love this place. And every time I go back home, I always try to go there when I go back home, except they opened a location in Pasadena so I'm pretty happy.<br><br>
             Tip: never get taco coconut together. Bleh.<br><br>-BUN
         </div>
     </div>
-
-
-    <a href="#tpumps" class="entry open-popup-link">
-        <div class="grid-item recommendations bayarea chinese drinks">
-            <div class="long name"> HONEY MANGO<br> BLACK MILK TEA </div>
-            <img src="img/foodpics/tpumps.jpg">
-            <div class="info">  
-                TPUMPS | SAN FRANCISCO<br><i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-            </div>
-        </div>
-    </a>    
-
-
 
 
     </div> <!---END GRID-->
