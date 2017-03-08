@@ -16,7 +16,7 @@ $(document).ready( function() {
    }
 
    // if clicking the recommendations button, don't filter
-   if($this[0].id === "header-rec") {
+   if($this[0].id === "header-rec" || $this[0].id === "header-recipes") {
     return;
    }
 
