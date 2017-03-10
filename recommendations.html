@@ -2,28 +2,28 @@
 
 <!DOCTYPE html>
 <head>
-<title>Hon + Bun</title> <!--change title here-->
- 
-<link rel="shortcut icon" href="{Favicon}">
-<link rel="alternate" type="application/rss+xml" href="{RSS}">
+    <title>Recommendations - Hon + Bun</title> <!--change title here-->
 
-<!--fontawesome-->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<!--google fonts-->
-<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,400italic,700,700italic,300italic,300|Inconsolata' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="{Favicon}">
+    <link rel="alternate" type="application/rss+xml" href="{RSS}">
 
-<!-- filter scripts -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!--google fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,400italic,700,700italic,300italic,300|Inconsolata' rel='stylesheet' type='text/css'>
 
-<!-- Local css and js files -->
-<link rel="stylesheet" type="text/css" href="css/recommendations.css">
-<script type="text/javascript" src="js/recommendations.js"></script>
-<link href="magnific-popup/magnific-popup.css" rel="stylesheet">
+    <!-- filter scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+
+    <!-- Local css and js files -->
+    <link rel="stylesheet" type="text/css" href="css/recommendations.css">
+    <script type="text/javascript" src="js/recommendations.js"></script>
+    <link href="magnific-popup/magnific-popup.css" rel="stylesheet">
 
 
 </head>
- 
+
 <body>
     <div id="top">
         <a href="index.html"><div class="toptitle">HON + BUN</div></a>
@@ -32,14 +32,14 @@
 
     <div class="sidebar">
 
-    <div class="filters">
-        <!-- category zero -->
-        <div class="button-group" data-filter-group="availability">
+        <div class="filters">
+            <!-- category zero -->
+<!--         <div class="button-group" data-filter-group="availability">
             <h1>CONTENT</h1>
             <button class="button is-checked" data-filter="">all</button>
             <button class="button" data-filter=".recipes">Recipes</button>
             <button class="button" data-filter=".recommendations">Recommendations</button>
-        </div>
+        </div> -->
 
         <!-- category one -->
         <div class="button-group" data-filter-group="availability">
@@ -90,42 +90,42 @@
             <div class="column">
                 <button class="button" data-filter=".drinks">Drinks</button>
                 <button class="button" data-filter=".entrees">Entrees</button>
+                <br><br><br><br><br>
             </div>
         </div>
 
-        <!-- <hr><br> -->
-
         <!-- category four -->
-<!--         <div class="button-group" data-filter-group="type">
-            <h1>FAVORITES</h1>
-            <button class="button is-checked" data-filter="">all</button>
-            <button class="button" data-filter=".hon">hon</button>
-            <button class="button" data-filter=".bun">bun</button>
-        </div> -->
-        
+        <div class="button-group" data-filter-group="type">
+            <h1>AUTHOR</h1>
+            <div class="column">
+                <button class="button is-checked" data-filter="">all</button>
+                <button class="button" data-filter=".hon">Hon</button>
+                <button class="button" data-filter=".bun">Bun</button>
+            </div>
+        </div>
     </div>
-    </div>
+</div>
 
-    <div class="grid">
-      
+<div class="grid">
     <a href="#vallarta" class="entry open-popup-link">
-        <div class="grid-item recommendations sandiego mexican entrees">
-            <div class="name"> CHRISTIAN FRIES </div>
+        <div class="grid-item recommendations sandiego mexican entrees bun">
+            <div class="name"> VALLARTA EXPRESS MEXICAN EATERY </div>
             <img src="img/foodpics/vallarta.jpg">
             <div class="info">  
-                VALLARTA | SAN DIEGO<br><i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i><br>
+                CHRISTIAN FRIES
             </div>
         </div>
     </a>
     <div id="vallarta" class="white-popup mfp-hide">
-        <h1>Vallarta Express Mexican Eatery</h1><br>
+        <h1>Vallarta Express Mexican Eatery </h1><br>
         <div class="restaurant-info restaurant-text">
             <img class="entrypic" src="img/entrypics/vallarta.jpg">        
-            <span class="uppercase"><b>Christian Fries</b><br><br>4277 Genesee Ave<br>San Diego, CA 92117<br><br></span>
+            <span class="uppercase"><b>Christian Fries</b><br>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i><br><br>4277 Genesee Ave<br>San Diego, CA 92117<br><br></span>
             <a class="yelp-link" href="https://www.yelp.com/biz/vallarta-express-mexican-eatery-san-diego" target="_blank">YELP</a><br>
         </div>
         <div class="restaurant-desc restaurant-text">
@@ -137,15 +137,11 @@
     </div>
 
     <a href="#tacostand" class="entry open-popup-link">
-        <div class="grid-item recommendations sandiego mexican entrees">
-            <div class="name"> SONORA TACO </div>
+        <div class="grid-item recommendations sandiego mexican entrees bun">
+            <div class="name"> THE TACO STAND<br><br> </div>
             <img src="img/foodpics/tacostand.jpg">
             <div class="info">  
-                THE TACO STAND | LA JOLLA<br><i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i><br>
+                SONORA TACO
             </div>
         </div>
     </a>
@@ -153,7 +149,12 @@
         <h1>The Taco Stand</h1><br>
         <div class="restaurant-info restaurant-text">
             <img class="entrypic" src="img/entrypics/tacostand.jpg">        
-            <span class="uppercase"><b>Sonora Taco</b><br><br>621 Pearl St<br>La Jolla, CA 92117<br><br></span>
+            <span class="uppercase"><b>Sonora Taco</b><br>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i><br><br>621 Pearl St<br>La Jolla, CA 92117<br><br></span>
             <a class="yelp-link" href="https://www.yelp.com/biz/the-taco-stand-la-jolla" target="_blank">YELP</a><br>
         </div>
         <div class="restaurant-desc restaurant-text">
@@ -165,15 +166,11 @@
     </div>
 
     <a href="#portos" class="entry open-popup-link">
-        <div class="grid-item recommendations losangeles cuban appetizers">
-            <div class="long name"> POTATO BALLS </div>
+        <div class="grid-item recommendations losangeles cuban appetizers bun">
+            <div class="name"> PORTO'S BAKERY<br><br> </div>
             <img src="img/foodpics/portos.jpg">
             <div class="info">  
-                PORTO'S BAKERY |<br> DOWNEY<br><i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i><br>
+                POTATO BALLS
             </div>
         </div>
     </a>
@@ -181,7 +178,12 @@
         <h1>Porto's Bakery</h1><br>
         <div class="restaurant-info restaurant-text">
             <img class="entrypic" src="img/entrypics/portos.jpg">        
-            <span class="uppercase"><b>Potato Balls</b><br><br>8233 Firestone Blvd<br>Downey, CA 90241<br><br></span>
+            <span class="uppercase"><b>Potato Balls</b><br>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i><br><br>8233 Firestone Blvd<br>Downey, CA 90241<br><br></span>
             <a class="yelp-link" href="https://www.yelp.com/biz/portos-bakery-and-cafe-downey" target="_blank">YELP</a><br>
         </div>
         <div class="restaurant-desc restaurant-text">
@@ -193,15 +195,11 @@
     </div>
 
     <a href="#bahnthai" class="entry open-popup-link">
-        <div class="grid-item recommendations sandiego thai entrees">
-            <div class="name"> YELLOW CURRY </div>
+        <div class="grid-item recommendations sandiego thai entrees bun">
+            <div class="name"> BAHN THAI<br><br> </div>
             <img src="img/foodpics/bahnthai.jpg">
             <div class="info">  
-                BAHN THAI | SAN DIEGO<br><i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i><br>
+                YELLOW CURRY
             </div>
         </div>
     </a>
@@ -209,7 +207,12 @@
         <h1>Bahn Thai</h1><br>
         <div class="restaurant-info restaurant-text">
             <img class="entrypic" src="img/entrypics/bahnthai.jpg">        
-            <span class="uppercase"><b>Yellow Curry</b><br><br>4646 Park Blvd Ste 3<br>San Diego, CA 92116<br><br></span>
+            <span class="uppercase"><b>Yellow Curry</b><br>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i><br><br>4646 Park Blvd Ste 3<br>San Diego, CA 92116<br><br></span>
             <a class="yelp-link" href="https://www.yelp.com/biz/bahn-thai-san-diego" target="_blank">YELP</a><br>
         </div>
         <div class="restaurant-desc restaurant-text">
@@ -221,15 +224,11 @@
     </div>
 
     <a href="#santung" class="entry open-popup-link">
-        <div class="grid-item recommendations bayarea chinese entrees">
-            <div class="name"> DRY FRIED CHICKEN </div>
+        <div class="grid-item recommendations bayarea chinese entrees bun">
+            <div class="name"> SAN TUNG<br><br> </div>
             <img src="img/foodpics/santung.jpg">
             <div class="info">  
-                SAN TUNG | SAN FRANCISCO<br><i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i><br>
+                DRY FRIED CHICKEN
             </div>
         </div>
     </a>
@@ -237,7 +236,12 @@
         <h1>San Tung</h1><br>
         <div class="restaurant-info restaurant-text">
             <img class="entrypic" src="img/entrypics/santung.jpg">        
-            <span class="uppercase"><b>Dry Fried Chicken</b><br><br>1031 Irving St<br>San Francisco, CA 94122<br><br></span>
+            <span class="uppercase"><b>Dry Fried Chicken</b><br>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i><br><br>1031 Irving St<br>San Francisco, CA 94122<br><br></span>
             <a class="yelp-link" href="https://www.yelp.com/biz/san-tung-san-francisco-2" target="_blank">YELP</a><br>
         </div>
         <div class="restaurant-desc restaurant-text">
@@ -250,15 +254,11 @@
 
 
     <a href="#tacoselgordo" class="entry open-popup-link">
-        <div class="grid-item recommendations sandiego mexican entrees">
-            <div class="long name"> AL PASTOR TACO </div>
+        <div class="grid-item recommendations sandiego mexican entrees bun">
+            <div class="name"> TACOS EL GORDO<br><br> </div>
             <img src="img/foodpics/tacoselgordo.jpg">
             <div class="info">  
-                TACOS EL GORDO |<br> CHULA VISTA<br><i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i><br>
+                AL PASTOR TACO
             </div>
         </div>
     </a>
@@ -266,7 +266,12 @@
         <h1>Tacos El Gordo</h1><br>
         <div class="restaurant-info restaurant-text">
             <img class="entrypic" src="img/entrypics/tacoselgordo.jpg">        
-            <span class="uppercase"><b>Al Pastor Taco</b><br><br>689 H St<br>Chula Vista, CA 91910<br><br></span>
+            <span class="uppercase"><b>Al Pastor Taco</b><br>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i><br><br>689 H St<br>Chula Vista, CA 91910<br><br></span>
             <a class="yelp-link" href="https://www.yelp.com/biz/tacos-el-gordo-chula-vista-3" target="_blank">YELP</a><br>
         </div>
         <div class="restaurant-desc restaurant-text">
@@ -278,14 +283,11 @@
 
 
     <a href="#hodads" class="entry open-popup-link">
-        <div class="grid-item recommendations sandiego american drinks">
-            <div class="long name"> STRAWBERRY<br> MILKSHAKE </div>
+        <div class="grid-item recommendations sandiego american drinks bun">
+            <div class="name"> HODAD'S<br><br></div>
             <img src="img/foodpics/hodads.jpg">
             <div class="info">  
-                HODAD'S | SAN DIEGO<br><i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
+                STRAWBERRY MILKSHAKE
             </div>
         </div>
     </a>
@@ -293,7 +295,11 @@
         <h1>Hodad's</h1><br>
         <div class="restaurant-info restaurant-text">
             <img class="entrypic" src="img/entrypics/hodads.jpg">        
-            <span class="uppercase"><b>Strawberry Milkshake</b><br><br>5010 Newport Ave<br>San Diego, CA 92107<br><br></span>
+            <span class="uppercase"><b>Strawberry Milkshake</b><br>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i><br><br>5010 Newport Ave<br>San Diego, CA 92107<br><br></span>
             <a class="yelp-link" href="https://www.yelp.com/biz/hodads-san-diego" target="_blank">YELP</a><br>
         </div>
         <div class="restaurant-desc restaurant-text">
@@ -305,15 +311,11 @@
 
 
     <a href="#phils" class="entry open-popup-link">
-        <div class="grid-item recommendations sandiego american entrees">
-            <div class="name"> BEEFY RIBS </div>
+        <div class="grid-item recommendations sandiego american entrees bun">
+            <div class="name"> PHIL'S BBQ<br><br> </div>
             <img src="img/foodpics/phils.jpg">
             <div class="info">  
-                PHIL'S BBQ | SAN DIEGO<br><i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i><br>
+                BEEFY RIBS
             </div>
         </div>
     </a>
@@ -321,7 +323,12 @@
         <h1>Phil's BBQ</h1><br>
         <div class="restaurant-info restaurant-text">
             <img class="entrypic" src="img/entrypics/phils.jpg">        
-            <span class="uppercase"><b>Beefy Ribs</b><br><br>3750 Sports Arena Blvd<br>San Diego, CA 92110<br><br></span>
+            <span class="uppercase"><b>Beefy Ribs</b><br>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i><br><br>3750 Sports Arena Blvd<br>San Diego, CA 92110<br><br></span>
             <a class="yelp-link" href="https://www.yelp.com/biz/phils-bbq-san-diego-2" target="_blank">YELP</a><br>
         </div>
         <div class="restaurant-desc restaurant-text">
@@ -334,132 +341,184 @@
     </div>
 
 
-    <a href="" class="entry" id="perilla">
-        <div class="grid-item recommendations bayarea vietnamese entrees">
-            <div class="long name"> CHARBOILED CHICKEN GARLIC NOODLES </div>
+    <a href="#perilla" class="entry open-popup-link">
+        <div class="grid-item recommendations bayarea vietnamese entrees bun">
+            <div class="name"> PERILLA </div>
             <img src="img/foodpics/perilla.jpg">
             <div class="info">  
-                PERILLA | SAN FRANCISCO<br><i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i><br>
+                FIVE SPICE CHICKEN<br>GARLIC NOODLES
             </div>
         </div>
     </a>
+    <div id="perilla" class="white-popup mfp-hide">
+        <h1>Perilla</h1><br>
+        <div class="restaurant-info restaurant-text">
+            <img class="entrypic" src="img/entrypics/perilla.jpg">        
+            <span class="uppercase"><b>Five Spice Chicken Garlic Noodles</b><br>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i><br><br>836 Irving St<br>San Francisco, CA 94122<br><br></span>
+            <a class="yelp-link" href="https://www.yelp.com/biz/perilla-san-francisco-2" target="_blank">YELP</a><br>
+        </div>
+        <div class="restaurant-desc restaurant-text">
+            Another place that I would go to with Jennifer when we were both back home. My childhood best friend Darren actually introduced me to this place. We were deciding between this place and a Korean restaurant across the street. We decided on here and I'm so glad we made that choice! This has become one of my favorite places to eat at when I'm back in the Bay Area.<br><br>
+            The five spice chicken is so damn tasty. The skin on the top is crunchy but the meat is so tender and juicy. The noodles themselves have the perfect chewiness and the garlic makes it like 43525x better. The imperial rolls (you can order them with or without) are so yummy. And combine all of that with the sauce on top, it just creates perfection.<br><br>
+            Another thing I love about Perilla is their service, specifically one waiter who is always working when I'm there. I don't know his name and the best way to describe him (I'm not trying to be offensive but I don't know how to distinguish him otherwise) is he's the chubby one with glasses. He talks in a soft but super nice voice and Jennifer and I absolutely adore him. Multiple reasons to enjoy going here!<br><br>-BUN
+        </div>
+    </div>
 
 
-    <a href="" class="entry" id="fukki">
-        <div class="grid-item recommendations tokyo japanese entrees">
-            <div class="name"> SPICY PORK RAMEN </div>
+    <a href="#fukki" class="entry open-popup-link">
+        <div class="grid-item recommendations tokyo japanese entrees bun">
+            <div class="name"> FUKKI<br><br> </div>
             <img src="img/foodpics/fukki.jpg">
             <div class="info">  
-                FUKKI | TOKYO<br><i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i><br>
+                SPICY PORK RAMEN
             </div>
         </div>
     </a>
+    <div id="fukki" class="white-popup mfp-hide">
+        <h1>Fukki</h1><br>
+        <div class="restaurant-info restaurant-text">
+            <img class="entrypic" src="img/entrypics/fukki.jpg">        
+            <span class="uppercase"><b>Spicy Pork Ramen</b><br>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i><br><br>芝大門2-1-1<br>Minato, 東京都 〒105-0012 Japan<br><br></span>
+            <a class="yelp-link" href="https://www.yelp.com/biz/%E7%A6%8F%E6%B0%97-%E6%B8%AF%E5%8C%BA" target="_blank">YELP</a><br>
+        </div>
+        <div class="restaurant-desc restaurant-text">
+            Can anything be more authentic than ramen in Japan? Talk about going there with high expectations and then everything exceeds your expectations. This was probably my favorite meal in Japan: a small, simple ramen shop near Tokyo Tower that only had one worker.<br><br>
+            It was a cold day in December and the broth was the perfect remedy. I got the spicy pork ramen so the soup had a little kick to it but not so much that you couldn't eat it. The pork was so soft and juicy, I remember closing my eyes and just cherishing it (and if you read my other recommendations, that rarely happens). It was just so tasty that sometimes I can think back to that meal and just taste the pork in my mouth. I remember eating it at the time and thinking to myself, "Yup, this is my favorite meal so far." and it stayed that way the entire trip.<br><br>
+            The best part about this meal was that I was at the booth and I was watching the worker make my order. It was a show just watching him make the noodles, make the broth, and put all the toppings on. It definitely made the meal so much more enjoyable to see it being made and if I were to go back to Japan, I'd try my best to go back to this place to bring back the memories of that cold December day.<br><br>-BUN
+        </div>
+    </div>
 
 
     <a href="" class="entry" id="graters">
-        <div class="grid-item recommendations sandiego american entrees">
-            <div class="long name"> LOBSTER GRILLED CHEESE </div>
+        <div class="grid-item recommendations sandiego american entrees bun">
+            <div class="name"> GRATER'S<br><br> </div>
             <img src="img/foodpics/graters.jpg">
             <div class="info">  
-                GRATER'S | SAN DIEGO<br><i class="fa fa-star-o" aria-hidden="true"></i>
+                LOBSTER GRILLED CHEESE
+
+<!--                 <i class="fa fa-star-o" aria-hidden="true"></i>
                 <i class="fa fa-star-o" aria-hidden="true"></i>
                 <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i> -->
             </div>
         </div>
     </a>
 
 
     <a href="" class="entry" id="lowkeypokejoint">
-        <div class="grid-item recommendations orangecounty japanese entrees">
-            <div class="long name"> POKE BOWL </div>
+        <div class="grid-item recommendations orangecounty japanese entrees bun">
+            <div class="name"> THE LOW KEY<br>POKE JOINT </div>
             <img src="img/foodpics/lowkeypokejoint.jpg">
             <div class="info">  
-                THE LOW KEY POKE JOINT | GARDEN GROVE<br><i class="fa fa-star-o" aria-hidden="true"></i>
+                POKE BOWL
+<!--                 <i class="fa fa-star-o" aria-hidden="true"></i>
                 <i class="fa fa-star-o" aria-hidden="true"></i>
                 <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i> -->
             </div>
         </div>
     </a>    
 
 
     <a href="" class="entry" id="leestofu">
-        <div class="grid-item recommendations losangeles korean entrees">
-            <div class="name"> BEEF TOFU </div>
+        <div class="grid-item recommendations losangeles korean entrees bun">
+            <div class="name"> LEE'S TOFU<br><br> </div>
             <img src="img/foodpics/leestofu.jpg">
             <div class="info">  
-                LEE'S TOFU | GARDENA<br><i class="fa fa-star-o" aria-hidden="true"></i>
+                BEEF TOFU
+
+<!--                 <i class="fa fa-star-o" aria-hidden="true"></i>
                 <i class="fa fa-star-o" aria-hidden="true"></i>
                 <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i> -->
             </div>
         </div>
     </a>    
 
 
     <a href="" class="entry" id="losangelesaleworks">
-        <div class="grid-item recommendations losangeles american drinks">
-            <div class="long name"> SPACE XPA SESSION </div>
+        <div class="grid-item recommendations losangeles american drinks bun">
+            <div class="name"> LOS ANGELES<br>ALE WORKS </div>
             <img src="img/foodpics/losangelesaleworks.jpg">
             <div class="info">  
-                LOS ANGELES ALE WORKS | HAWTHORNE<br><i class="fa fa-star-o" aria-hidden="true"></i>
+                SPACE XPA SESSION
+
+<!--                 <i class="fa fa-star-o" aria-hidden="true"></i>
                 <i class="fa fa-star-o" aria-hidden="true"></i>
                 <i class="fa fa-star-o" aria-hidden="true"></i>
                 <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i> -->
             </div>
         </div>
     </a>    
 
 
     <a href="" class="entry" id="punjabitandoor">
-        <div class="grid-item recommendations sandiego indian entrees">
-            <div class="long name"> PUNJABI TANDOOR </div>
+        <div class="grid-item recommendations sandiego indian entrees bun">
+            <div class="name"> PUNJABI TANDOOR<br><br> </div>
             <img src="img/foodpics/punjabitandoor.jpg">
             <div class="info">  
-                PUNJABI TANDOOR |<br> SAN DIEGO<br><i class="fa fa-star-o" aria-hidden="true"></i>
+                CHICKEN TIKKA MASALA
+
+<!--                 <i class="fa fa-star-o" aria-hidden="true"></i>
                 <i class="fa fa-star-o" aria-hidden="true"></i>
                 <i class="fa fa-star-o" aria-hidden="true"></i>
                 <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i> -->
             </div>
         </div>
     </a>    
 
 
-    <a href="" class="entry" id="tacoselnegro">
-        <div class="grid-item recommendations losangeles mexican entrees">
-            <div class="long name"> TACOS EL NEGRO </div>
+    <a href="#tacoselnegro" class="entry open-popup-link">
+        <div class="grid-item recommendations losangeles mexican entrees bun">
+            <div class="name"> TACOS EL NEGRO<br><br> </div>
             <img src="img/foodpics/tacoselnegro.jpg">
             <div class="info">  
-                TACOS EL NEGRO |<br> SOUTH GATE<br><i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
+                CACHETE AND LABIO TACOS
             </div>
         </div>
     </a>    
-
+    <div id="tacoselnegro" class="white-popup mfp-hide">
+        <h1>Tacos El Negro</h1><br>
+        <div class="restaurant-info restaurant-text">
+            <img class="entrypic" src="img/entrypics/tacoselnegro.jpg">        
+            <span class="uppercase"><b>Cachete and Labio Tacos</b><br>                
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i><br><br>5720 Imperial Hwy Ste Q<br>South Gate, CA 90280<br><br></span>
+            <a class="yelp-link" href="https://www.yelp.com/biz/tacos-el-negro-south-gate" target="_blank">YELP</a><br>
+        </div>
+        <div class="restaurant-desc restaurant-text">
+            I'll be honest here: the picture that you see is not actually a picture of the cachete or the labio tacos. Then why did I post this picture? Because all the tacos they sell look <u>exactly</u> the same. Like no joke.<br><br>
+            This place only sells beef tacos (cachete, labio, carne asada, cabeza) which is unique. Their tacos are $1.40 each (as of March 6, 2017) which is a great deal considering it's every day and not just a Taco Tuesday special. They chop them up in really small pieces which is a little weird because it seems a little mushy, but you can definitely still taste the flavor. They don't put a lot of stuff on their tacos, they don't get all fancy with the toppings. However, their sauces are very good. The cachete and labio tacos themselves are very juicy and you can taste the small fattiness that you don't taste in the carne asada and cabeza tacos.<br><br>
+            I asked for a cup of water and they charged me $1.65 (that could've been another taco!) which I was so confused about. Maybe it's because they spoke all Spanish and I lost my three years of Spanish.<br><br>-BUN
+        </div>
+    </div>
 
     <a href="#itsbobatime" class="entry open-popup-link">
-        <div class="grid-item recommendations losangeles chinese drinks">
-            <div class="name"> AVOCADO SMOOTHIE </div>
+        <div class="grid-item recommendations losangeles chinese drinks bun">
+            <div class="name"> IT'S BOBA TIME<br><br> </div>
             <img src="img/foodpics/itsbobatime.jpg">
             <div class="info">  
-                IT'S BOBA TIME | GARDENA<br><i class="fa fa-star-o" aria-hidden="true"></i>
+                AVOCADO SMOOTHIE
+
+<!--                 <i class="fa fa-star-o" aria-hidden="true"></i>
                 <i class="fa fa-star-o" aria-hidden="true"></i>
                 <i class="fa fa-star-o" aria-hidden="true"></i>
                 <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i> -->
             </div>
         </div>
     </a>    
@@ -476,11 +535,26 @@
             I like the avocado smoothie because it's super creamy and smooth. They also use avocados so sometimes you'll taste a bigger than normal chunk. The pistachio frappe also uses real pistachios and you'll taste the pistachio bits in there. The boba is sweet and chewy too. There's not much else to say other than it's my favorite boba place in Southern California. If there's Boba Time near me, then it's boba time.<br><br>-BUN
         </div>
     </div>
+
+
+    <a href="#thecottage" class="entry open-popup-link">
+        <div class="grid-item recommendations sandiego american entrees bun">
+            <div class="name"> THE COTTAGE<br><br> </div>
+            <img src="img/foodpics/thecottage.jpg">
+            <div class="info">  
+                STUFFED FRENCH TOAST
+            </div>
+        </div>
+    </a>   
     <div id="thecottage" class="white-popup mfp-hide">
         <h1>The Cottage</h1><br>
         <div class="restaurant-info restaurant-text">
             <img class="entrypic" src="img/entrypics/thecottage.jpg">        
-            <span class="uppercase"><b>Stuffed French Toast</b><br><br>7702 Fay Ave<br>La Jolla, CA 92037<br><br></span>
+            <span class="uppercase"><b>Stuffed French Toast</b><br>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i><br><br>7702 Fay Ave<br>La Jolla, CA 92037<br><br></span>
             <a class="yelp-link" href="https://www.yelp.com/biz/the-cottage-la-jolla" target="_blank">YELP</a><br>
         </div>
         <div class="restaurant-desc restaurant-text">
@@ -491,30 +565,12 @@
     </div>
 
 
-    <a href="#thecottage" class="entry open-popup-link">
-        <div class="grid-item recommendations sandiego american entrees">
-            <div class="long name"> STUFFED FRENCH<br> TOAST </div>
-            <img src="img/foodpics/thecottage.jpg">
-            <div class="info">  
-                THE COTTAGE | LA JOLLA<br><i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-            </div>
-        </div>
-    </a>   
-
-
     <a href="#bahnthai2" class="entry open-popup-link">
-        <div class="grid-item recommendations sandiego thai entrees">
-            <div class="name"> PAD THAI </div>
+        <div class="grid-item recommendations sandiego thai entrees bun">
+            <div class="name"> BAHN THAI<br><br> </div>
             <img src="img/foodpics/bahnthai2.jpg">
             <div class="info">  
-                BAHN THAI | SAN DIEGO<br><i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
+                CHICKEN PAD THAI
             </div>
         </div>
     </a>    
@@ -522,7 +578,12 @@
         <h1>Bahn Thai</h1><br>
         <div class="restaurant-info restaurant-text">
             <img class="entrypic" src="img/entrypics/bahnthai2.jpg">        
-            <span class="uppercase"><b>Pad Thai</b><br><br>4646 Park Blvd Ste 3<br>San Diego, CA 92116<br><br></span>
+            <span class="uppercase"><b>Chicken Pad Thai</b><br>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i><br><br>4646 Park Blvd Ste 3<br>San Diego, CA 92116<br><br></span>
             <a class="yelp-link" href="https://www.yelp.com/biz/bahn-thai-san-diego" target="_blank">YELP</a><br>
         </div>
         <div class="restaurant-desc restaurant-text">
@@ -532,28 +593,56 @@
         </div>
     </div>
 
-    <a href="" class="entry" id="oldtownsushi">
-        <div class="grid-item recommendations bayarea japanese entrees">
-            <div class="long name"> NUMBER ONE ROLL </div>
+    <a href="#oldtownsushi" class="entry open-popup-link">
+        <div class="grid-item recommendations bayarea japanese entrees bun">
+            <div class="name"> OLD TOWN SUSHI<br><br> </div>
             <img src="img/foodpics/oldtownsushi.jpg">
             <div class="info">  
-                OLD TOWN SUSHI |<br> SAN MATEO<br><i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
+                NUMBER ONE ROLL
             </div>
         </div>
     </a>    
-   <div id="tpumps" class="white-popup mfp-hide">
+    <div id="oldtownsushi" class="white-popup mfp-hide">
+        <h1>Old Town Sushi</h1><br>
+        <div class="restaurant-info restaurant-text">
+            <img class="entrypic" src="img/entrypics/oldtownsushi.jpg">        
+            <span class="uppercase"><b>Number One Roll</b><br>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i><br><br>100 S B St<br>San Mateo, CA 94401<br><br></span>
+            <a class="yelp-link" href="https://www.yelp.com/biz/old-town-sushi-san-mateo" target="_blank">YELP</a><br>
+        </div>
+        <div class="restaurant-desc restaurant-text">
+            Tpumps. Old Town Sushi right next door. Or Tpumps while we ate at Old Town Sushi. Those were the good times. (You can even see the Tpumps in the back of that picture). A good friend Jennifer and I would do that every time we came back from college during break. That would be our go-to hangout meal. And then everything changed when the San Mateo Tpumps location closed. But then the San Francisco location opened and the world went back to normal (kinda).<br><br>
+            My family and I love to go here when I visit home because it's a great environment. The staff are great and love to joke around. We usually come for dinner so we can get the dinner combination, which is a combination of three dishes on their selected menu for $22 or so, which is an absolute steal! I also recommend the double salmon roll because salmon = life.<br><br>
+            The number one roll is a normal roll ingredient-wise, but they have a mountain of imitation crab meat on top and they also put some sriracha as well. It's a giant masterpiece that's very Instagram friendly, for those who want to post their pictures. The roll itself is very good but sometimes the crab meat can get overwhelming because of the mayonnaise but other than that, it's delicious. Too bad it's not one of the rolls included on the dinner combination menu.<br><br>-BUN
+        </div>
+    </div>
+
+    <a href="#tpumps" class="entry open-popup-link">
+        <div class="grid-item recommendations bayarea chinese drinks bun">
+            <div class="name"> TPUMPS </div>
+            <img src="img/foodpics/tpumps.jpg">
+            <div class="info">  
+                HONEY MANGO BLACK <br>MILK TEA
+            </div>
+        </div>
+    </a>    
+    <div id="tpumps" class="white-popup mfp-hide">
         <h1>Tpumps</h1><br>
         <div class="restaurant-info restaurant-text">
             <img class="entrypic" src="img/entrypics/tpumps.jpg">        
-            <span class="uppercase"><b>Honey Mango Black Milk Tea</b><br><br>1916 Irving St<br>San Francisco, CA 94122<br><br></span>
+            <span class="uppercase"><b>Honey Mango Black Milk Tea</b><br>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i><br><br>1916 Irving St<br>San Francisco, CA 94122<br><br></span>
             <a class="yelp-link" href="https://www.yelp.com/biz/tpumps-san-francisco" target="_blank">YELP</a><br>
         </div>
         <div class="restaurant-desc restaurant-text">
-            Old Town Sushi. Tpumps right next door. Or Tpumps while we ate at Old Town Sushi. Those were the good times. A good friend Jennifer and I would do that every time we came back from college during break. That would be our go-to hangout meal. And then everything changed when the San Mateo Tpumps location closed. But then the San Francisco location opened and the world went back to normal.<br><br>
+            Old Town Sushi. Tpumps right next door. Or Tpumps while we ate at Old Town Sushi. Those were the good times. A good friend Jennifer and I would do that every time we came back from college during break. That would be our go-to hangout meal. And then everything changed when the San Mateo Tpumps location closed. But then the San Francisco location opened and the world went back to normal (kinda).<br><br>
             My order: honey mango black milk tea, normal sweet, with boba and light ice. It's a sweet drink so if you don't like sweet, you can try other flavors or get it less sweet. In college, I met someone who worked at Tpumps at the time. I asked her what she recommended and she said this drink. I tried it once and I never looked back.<br><br> 
             When I went home during a school break in college, I went to Tpumps  days in a row, and one of those days I went twice in a day. And for the most part, I got the same thing every time. That's how much I love this place. And every time I go back home, I always try to go there when I go back home, except they opened a location in Pasadena so I'm pretty happy.<br><br>
             Tip: never get taco coconut together. Bleh.<br><br>-BUN
@@ -561,41 +650,25 @@
     </div>
 
 
-    <a href="#tpumps" class="entry open-popup-link">
-        <div class="grid-item recommendations bayarea chinese drinks">
-            <div class="long name"> HONEY MANGO<br> BLACK MILK TEA </div>
-            <img src="img/foodpics/tpumps.jpg">
-            <div class="info">  
-                TPUMPS | SAN FRANCISCO<br><i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-            </div>
-        </div>
-    </a>    
-
-
     <!---->
     <a href="#hashhouse" class="entry open-popup-link">
-        <div class="grid-item recommendations sandiego american entrees">
-            <div class="long name"> BLUEBERRY PECAN FLAPJACK </div>
+        <div class="grid-item recommendations sandiego american entrees hon">
+            <div class="name"> HASH HOUSE <br>A GO GO </div>
             <img src="img/foodpics/hashhouse.jpg">
             <div class="info">  
-                HASH HOUSE A GO GO |SAN DIEGO <br>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-          
+                BLUEBERRY PECAN FLAPJACK
             </div>
         </div>
     </a>    
-   <div id="hashhouse" class="white-popup mfp-hide">
+    <div id="hashhouse" class="white-popup mfp-hide">
         <h1>Hash House A Go Go</h1><br>
         <div class="restaurant-info restaurant-text">
             <img class="entrypic" src="img/entrypics/hashhouse.jpg">        
-            <span class="uppercase"><b>Blueberry Pecan Flapjack</b><br><br>3628 5th Ave<br>San Diego, CA 92103<br><br></span>
+            <span class="uppercase"><b>Blueberry Pecan Flapjack</b><br>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i><br><br>3628 5th Ave<br>San Diego, CA 92103<br><br></span>
             <a class="yelp-link" href="https://www.yelp.com/biz/hash-house-a-go-go-san-diego" target="_blank">YELP</a><br>
         </div>
         <div class="restaurant-desc restaurant-text">
@@ -604,16 +677,12 @@
     </div>
 
     <!--copy and pasta template-->
-  <a href="#puestoguac" class="entry open-popup-link">
-        <div class="grid-item recommendations sandiego appetizers ">
-            <div class="name"> PUESTO PERFECT GUAC</div>
+    <a href="#puestoguac" class="entry open-popup-link">
+        <div class="grid-item recommendations sandiego appetizers hon">
+            <div class="name"> PUESTO<br><br></div>
             <img src="img/foodpics/puestoguac.jpg">
             <div class="info">  
-                PUESTO | SAN DIEGO <br><i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
+                PUESTO PERFECT GUAC
             </div>
         </div>
     </a>    
@@ -621,24 +690,34 @@
         <h1>Puesto</h1><br>
         <div class="restaurant-info restaurant-text">
             <img class="entrypic" src="img/entrypics/puestoguac.jpg">        
-            <span class="uppercase"><b>Puesto Perfect Guac</b><br><br>789 W Harbor Dr<br>San Diego, CA 92101<br><br></span>
+            <span class="uppercase"><b>Puesto Perfect Guac</b><br>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i><br><br>789 W Harbor Dr<br>San Diego, CA 92101<br><br></span>
             <a class="yelp-link" href="hhttps://www.yelp.com/biz/puesto-san-diego-2" target="_blank">YELP</a><br>
         </div>
         <div class="restaurant-desc restaurant-text">
+<<<<<<< HEAD
        I went here on a day trip to San Diego with my friends. It was the last few days I had in Southern California before I hda to move to Indiana for graduate school. I knew Indiana wasn't going to give me the tacos I grew up with so that was the only thing we wanted to eat that day. I also wanted to try places I've never been which is how we ended up at Puesto <br> <br> Puesto is a modern Mexican place located in a sleepy plaza by the beach. We found it on Yelp and decided to give it a try. There's a very aesthetic butterfly wing mural near the restaurant which is proably what attracts most customers into the plaza. We were a party of 6 annd they could only accomodate a table for 4 and bar seats for 2 which we didn't really mind. Those sitting at the bar didn't mind because they wanted to drink anyways. <br><br> We started with their Puesto Perfect Guacamole and quite honestly it was the best thing I had. The tacos here were meh. Their guac had so many flavors going on that complicmented each other really well. The perfect Puesto guac had avocado, spice from the chili, some cheese, and a mixture of sitrus zing! The cheese was unexpected but actually made it great! They also has fresh chips that went beautifully with the guac. <br><br>-HON
         </div>
     </div>
 <!--->
+=======
+           We started with their Puesto Perfect Guacamole...it was AMAZING. There's so many flavors going on and somehow they mesh really well together. There's your expected avocado flavor, spice from the chili, some cheese, and a mixture of lime and orange zing! Definitely perfect! we had to keep asking for more chips ( which is super fresh too!) and literally licked the bowl clean. <br><br>-HON
+       </div>
+   </div>
+    <!-- -->
+>>>>>>> ab3a97cc7a44960503c34077af9a56dda3ef8f12
 
-    </div> <!---END GRID-->
-
-    <a href="https://github.com/honandbun/honandbun.github.io" target="_blank">
-      <div id="credit">honandbun.</div>
-    </a>
+<a href="https://github.com/honandbun/honandbun.github.io" target="_blank">
+  <div id="credit">honandbun.</div>
+</a>
 
 
-    <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="js/popup.js"></script>
+<script src="magnific-popup/jquery.magnific-popup.min.js"></script>
+<script src="js/popup.js"></script>
 </body>
 
 
