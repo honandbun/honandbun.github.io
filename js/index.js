@@ -15,6 +15,10 @@ $(document).ready( function() {
      $('.aboutus').css("display", "block");
    }
 
+   if($this[0].id === "header-howitworks") {
+     $('.howitworks').css("display", "block");
+   }
+
    // if clicking the recommendations button, don't filter
    if($this[0].id === "header-rec" || $this[0].id === "header-recipes") {
     return;
@@ -41,6 +45,7 @@ $(document).ready( function() {
  });
 
  $('.aboutus').css("display", "none"); // hides the aboutus section on page load
+ $('.howitworks').css("display", "none");
 });
 
 // layout Isotope after each image loads
