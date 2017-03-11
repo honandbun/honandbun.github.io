@@ -250,6 +250,18 @@ button {
     margin: 20px 0;
 }
 
+#logoDiv {
+    text-align: middle;
+}
+
+#logo {
+    width: 30%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding-right: 120px;
+}
+
 
 iframe {display:none}
 
