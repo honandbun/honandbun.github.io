@@ -19,7 +19,7 @@ $(document).ready( function() {
      $('.howitworks').css("display", "block");
    }
 
-   // if clicking the recommendations button, don't filter
+   // if clicking the recommendations or recipes button, don't filter
    if($this[0].id === "header-rec" || $this[0].id === "header-recipes") {
     return;
    }
