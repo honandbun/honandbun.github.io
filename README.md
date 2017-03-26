@@ -4,4 +4,4 @@ This repository contains our favorite places to eat. This repository also contai
 
 To view the website, go to: https://honandbun.github.io
 
-On the website, you'll read more about Hon and Bun. We hope you enjoy!
+On the website, you'll read more about Hon + Bun. We hope you enjoy!
